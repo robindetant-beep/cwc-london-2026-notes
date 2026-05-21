@@ -456,3 +456,34 @@ footer a { color: var(--text-muted); }
 .cf-status.cf-success { padding: 12px 14px; background: rgba(124,184,124,0.10); color: var(--green); border: 1px solid var(--green); }
 .cf-status.cf-error { padding: 12px 14px; background: rgba(217,122,122,0.10); color: var(--red); border: 1px solid var(--red); }
 .contact-form button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+/* Hero photo column + CTA button */
+.hero-photo-col { display: flex; flex-direction: column; gap: 14px; }
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--accent);
+  color: white !important;
+  padding: 13px 22px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 14px rgba(204,120,92,0.25);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(204,120,92,0.4);
+  text-decoration: none;
+  background: var(--accent-2);
+}
+.hero-cta .arrow { transition: transform 0.2s ease; display: inline-block; }
+.hero-cta:hover .arrow { transform: translateX(4px); }
+@media (max-width: 900px) {
+  .hero-photo-col { max-width: 320px; margin: 0 auto; align-items: stretch; }
+}
