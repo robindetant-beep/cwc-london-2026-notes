@@ -443,6 +443,7 @@ if (contactForm) {
  const email = document.getElementById('cfEmail').value.trim();
  const topic = document.getElementById('cfTopic').value;
  const message = document.getElementById('cfMessage').value.trim();
+ const phone = (document.getElementById('cfPhone')?.value || '').trim();
  const hp = (document.getElementById('cfHp')?.value || '').trim();
 
  if (!name || !email || !message) {
@@ -465,7 +466,7 @@ if (contactForm) {
  const resp = await fetch('/api/contact', {
  method: 'POST',
  headers: { 'Content-Type': 'application/json' },
- body: JSON.stringify({ name, email, topic, message, hp })
+ body: JSON.stringify({ name, email, phone, topic, message, hp })
  });
  const data = await resp.json().catch(() => ({}));
  if (resp.ok && data.ok) {

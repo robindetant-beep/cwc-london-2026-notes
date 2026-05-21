@@ -19,7 +19,7 @@ export default async function handler(req, res) {
   try {
     // Parse body (Vercel auto-parses JSON, but be defensive)
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
-    const { name, email, topic, message, hp } = body;
+    const { name, email, phone, topic, message, hp } = body;
 
     // Honeypot: bots fill hidden fields; humans don't
     if (hp && hp.trim() !== '') {
@@ -40,6 +40,7 @@ export default async function handler(req, res) {
     const safe = {
       name: name.trim().slice(0, 120),
       email: email.trim().slice(0, 200),
+      phone: (phone || '').toString().trim().slice(0, 40),
       topic: (topic || 'Question').toString().trim().slice(0, 200),
       message: message.trim().slice(0, 8000),
     };
@@ -58,15 +59,17 @@ export default async function handler(req, res) {
     const referer = req.headers['referer'] || req.headers['referrer'] || 'direct';
     const ua = req.headers['user-agent'] || 'unknown';
 
-    const text = [
+    const textLines = [
       safe.message,
       '',
       '---',
       `De : ${safe.name} <${safe.email}>`,
-      `Sujet : ${safe.topic}`,
-      `Source : ${referer}`,
-      `UA : ${ua}`,
-    ].join('\n');
+    ];
+    if (safe.phone) textLines.push(`Tel : ${safe.phone}`);
+    textLines.push(`Sujet : ${safe.topic}`);
+    textLines.push(`Source : ${referer}`);
+    textLines.push(`UA : ${ua}`);
+    const text = textLines.join('\n');
 
     const escapeHtml = (s) => String(s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
@@ -78,6 +81,7 @@ export default async function handler(req, res) {
           <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#888;margin-bottom:4px;">Nouveau contact · CwC Recap</div>
           <div style="font-size:18px;font-weight:600;color:#1a1915;">${escapeHtml(safe.name)}</div>
           <div style="font-size:13px;color:#666;"><a href="mailto:${escapeHtml(safe.email)}" style="color:#cc785c;">${escapeHtml(safe.email)}</a></div>
+          ${safe.phone ? `<div style="font-size:13px;color:#666;margin-top:2px;">Tel : <a href="tel:${escapeHtml(safe.phone.replace(/[^+0-9]/g,''))}" style="color:#cc785c;">${escapeHtml(safe.phone)}</a></div>` : ''}
         </div>
         <div style="font-size:12px;text-transform:uppercase;letter-spacing:0.06em;color:#888;margin-bottom:6px;">Sujet</div>
         <div style="font-size:15px;margin-bottom:18px;">${escapeHtml(safe.topic)}</div>
