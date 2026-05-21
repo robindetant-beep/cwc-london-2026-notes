@@ -13,12 +13,12 @@
 <meta name="twitter:image" content="assets/og-image.jpg" />
 
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Code w/ Claude Extended London — Recap interactif" />
+<meta property="og:title" content="Code w/ Claude Extended London · Recap interactif" />
 <meta property="og:description" content="Les 16 features Anthropic, les case studies Spotify · Harvey · Lovable, les workshops Applied AI. Recap de la conférence du 20 mai 2026." />
 <meta property="og:locale" content="fr_FR" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Code w/ Claude Extended London — Recap" />
+<meta name="twitter:title" content="Code w/ Claude Extended London · Recap" />
 <meta name="twitter:description" content="Les 16 features Anthropic, les case studies, les workshops Applied AI." />
 
 <link rel="stylesheet" href="styles.css" />
@@ -30,715 +30,715 @@
 <div class="progress-bar" id="progressBar"></div>
 
 <nav class="nav" aria-label="Navigation principale">
-  <div class="nav-inner">
-    <a href="#top" class="logo">
-      <span class="logo-dot" aria-hidden="true"></span>
-      <span>CwC Extended London</span>
-    </a>
-    <div class="nav-links">
-      <a href="#tldr" data-nav>TL;DR</a>
-      <a href="#day1-day2" data-nav>Day 1 ↔ Day 2</a>
-      <a href="#features" data-nav>Features</a>
-      <a href="#customers" data-nav>Clients</a>
-      <a href="#founder" data-nav>Founder</a>
-      <a href="#workshops" data-nav>Workshops</a>
-      <a href="#takeaways" data-nav>Actions</a>
-      <a href="#contact" data-nav>Contact</a>
-    </div>
-    <div class="nav-actions">
-      <button class="cmd-trigger" id="cmdTrigger" aria-label="Ouvrir la palette de commandes (Cmd K)">
-        <span aria-hidden="true">⌕</span>
-        <span class="cmd-label">Recherche & navigation</span>
-        <span class="kbd">⌘K</span>
-      </button>
-      <button class="icon-btn" id="themeToggle" aria-label="Basculer le thème">◐</button>
-      <button class="icon-btn nav-burger" id="navBurger" aria-label="Ouvrir le menu">☰</button>
-    </div>
-  </div>
+ <div class="nav-inner">
+ <a href="#top" class="logo">
+ <span class="logo-dot" aria-hidden="true"></span>
+ <span>CwC Extended London</span>
+ </a>
+ <div class="nav-links">
+ <a href="#tldr" data-nav>TL;DR</a>
+ <a href="#day1-day2" data-nav>Day 1 ↔ Day 2</a>
+ <a href="#features" data-nav>Features</a>
+ <a href="#customers" data-nav>Clients</a>
+ <a href="#founder" data-nav>Founder</a>
+ <a href="#workshops" data-nav>Workshops</a>
+ <a href="#takeaways" data-nav>Actions</a>
+ <a href="#contact" data-nav>Contact</a>
+ </div>
+ <div class="nav-actions">
+ <button class="cmd-trigger" id="cmdTrigger" aria-label="Ouvrir la palette de commandes (Cmd K)">
+ <span aria-hidden="true">⌕</span>
+ <span class="cmd-label">Recherche & navigation</span>
+ <span class="kbd">⌘K</span>
+ </button>
+ <button class="icon-btn" id="themeToggle" aria-label="Basculer le thème">◐</button>
+ <button class="icon-btn nav-burger" id="navBurger" aria-label="Ouvrir le menu">☰</button>
+ </div>
+ </div>
 </nav>
 
 <div class="drawer-backdrop" id="drawerBackdrop"></div>
 <aside class="drawer" id="drawer" aria-label="Menu de navigation">
-  <h4>Sections</h4>
-  <a href="#tldr">01 · TL;DR</a>
-  <a href="#day1-day2">02 · Day 1 ↔ Day 2</a>
-  <a href="#features">03 · 16 features</a>
-  <a href="#customers">04 · Customer case studies</a>
-  <a href="#founder">05 · Founder stage</a>
-  <a href="#builder">06 · Builder stage</a>
-  <a href="#workshops">07 · Workshops Applied AI</a>
-  <a href="#themes">08 · Thèmes</a>
-  <a href="#glossary">09 · Glossaire</a>
-  <a href="#speakers">10 · Speakers</a>
-  <a href="#takeaways">11 · Actions à embarquer</a>
-  <a href="#sources">12 · Sources</a>
-  <a href="#contact">— Contact</a>
-  <h4>Raccourcis</h4>
-  <a href="#" id="drawerCmdk">Ouvrir ⌘K</a>
-  <a href="#" id="drawerPrint">Imprimer / PDF</a>
+ <h4>Sections</h4>
+ <a href="#tldr">01 · TL;DR</a>
+ <a href="#day1-day2">02 · Day 1 ↔ Day 2</a>
+ <a href="#features">03 · 16 features</a>
+ <a href="#customers">04 · Customer case studies</a>
+ <a href="#founder">05 · Founder stage</a>
+ <a href="#builder">06 · Builder stage</a>
+ <a href="#workshops">07 · Workshops Applied AI</a>
+ <a href="#themes">08 · Thèmes</a>
+ <a href="#glossary">09 · Glossaire</a>
+ <a href="#speakers">10 · Speakers</a>
+ <a href="#takeaways">11 · Actions à embarquer</a>
+ <a href="#sources">12 · Sources</a>
+ <a href="#contact">· Contact</a>
+ <h4>Raccourcis</h4>
+ <a href="#" id="drawerCmdk">Ouvrir ⌘K</a>
+ <a href="#" id="drawerPrint">Imprimer / PDF</a>
 </aside>
 
 <div class="layout">
 <aside class="toc" id="toc" aria-label="Table des matières">
-  <h4>Navigation</h4>
-  <a href="#tldr"><span class="toc-num">01</span> TL;DR</a>
-  <a href="#day1-day2"><span class="toc-num">02</span> Day 1 ↔ Day 2</a>
-  <a href="#features"><span class="toc-num">03</span> 16 features</a>
-  <a href="#customers"><span class="toc-num">04</span> Customers</a>
-  <a href="#founder"><span class="toc-num">05</span> Founder</a>
-  <a href="#builder"><span class="toc-num">06</span> Builder</a>
-  <a href="#workshops"><span class="toc-num">07</span> Workshops</a>
-  <a href="#themes"><span class="toc-num">08</span> Thèmes</a>
-  <a href="#glossary"><span class="toc-num">09</span> Glossaire</a>
-  <a href="#speakers"><span class="toc-num">10</span> Speakers</a>
-  <a href="#takeaways"><span class="toc-num">11</span> Actions</a>
-  <a href="#sources"><span class="toc-num">12</span> Sources</a>
-  <a href="#contact"><span class="toc-num">—</span> Contact</a>
-  <h4>Lecture</h4>
-  <div style="font-size:11px;color:var(--text-dim);padding:0 10px;">Progression</div>
-  <div class="toc-progress"><div class="toc-progress-fill" id="tocProgressFill"></div></div>
+ <h4>Navigation</h4>
+ <a href="#tldr"><span class="toc-num">01</span> TL;DR</a>
+ <a href="#day1-day2"><span class="toc-num">02</span> Day 1 ↔ Day 2</a>
+ <a href="#features"><span class="toc-num">03</span> 16 features</a>
+ <a href="#customers"><span class="toc-num">04</span> Customers</a>
+ <a href="#founder"><span class="toc-num">05</span> Founder</a>
+ <a href="#builder"><span class="toc-num">06</span> Builder</a>
+ <a href="#workshops"><span class="toc-num">07</span> Workshops</a>
+ <a href="#themes"><span class="toc-num">08</span> Thèmes</a>
+ <a href="#glossary"><span class="toc-num">09</span> Glossaire</a>
+ <a href="#speakers"><span class="toc-num">10</span> Speakers</a>
+ <a href="#takeaways"><span class="toc-num">11</span> Actions</a>
+ <a href="#sources"><span class="toc-num">12</span> Sources</a>
+ <a href="#contact"><span class="toc-num">·</span> Contact</a>
+ <h4>Lecture</h4>
+ <div style="font-size:11px;color:var(--text-dim);padding:0 10px;">Progression</div>
+ <div class="toc-progress"><div class="toc-progress-fill" id="tocProgressFill"></div></div>
 </aside>
 
 <main id="main">
 
-  <header class="hero" id="top">
-    <div class="hero-grid">
-      <div class="hero-left">
-        <span class="hero-eyebrow"><span class="dot"></span> 20 mai 2026 · Londres · Recap</span>
-        <h1>Code w/ Claude <span class="accent">Extended</span> London — ce que j'en retiens.</h1>
-        <p class="hero-sub">
-          Une journée &laquo;&nbsp;laptops open&nbsp;&raquo; pour indie devs et early-stage founders, en suivi du Day 1 conférence. Recap interactif des 16 features Anthropic, des case studies clients (Spotify, Harvey, Lovable), des workshops Applied AI, et des patterns à embarquer.
-        </p>
-        <div class="hero-meta">
-          <span>📍 Londres</span>
-          <span>🗓 Mer. 20 mai 2026</span>
-          <span>⏱ 08:00 → 18:00 BST</span>
-          <span>🎙 Applied AI + founders</span>
-        </div>
-      </div>
-      <div class="hero-photo-col">
-        <figure class="hero-photo">
-          <img src="assets/robin-hero.jpg" alt="Robin Detant devant le panneau Code w/ Claude à Londres" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;" />
-          <figcaption class="hero-photo-caption">
-            <strong>Code w/ Claude · London</strong>
-            Sur place — 20 mai 2026 (Extended).
-          </figcaption>
-        </figure>
-        <a href="#contact" class="hero-cta" data-cta="hero">
-          <span>Discutons</span>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
-    <div class="stats" aria-label="Chiffres clés">
-      <div class="stat"><div class="stat-value">16</div><div class="stat-label">Features Day 1</div></div>
-      <div class="stat"><div class="stat-value">6×</div><div class="stat-label">Harvey · Dreaming</div></div>
-      <div class="stat"><div class="stat-value">+60%</div><div class="stat-label">Spotify · PR frequency</div></div>
-      <div class="stat"><div class="stat-value">5×</div><div class="stat-label">Coût · Advisor Strategy</div></div>
-    </div>
-  </header>
+ <header class="hero" id="top">
+ <div class="hero-grid">
+ <div class="hero-left">
+ <span class="hero-eyebrow"><span class="dot"></span> 20 mai 2026 · Londres · Recap</span>
+ <h1>Code w/ Claude <span class="accent">Extended</span> London · ce que j'en retiens.</h1>
+ <p class="hero-sub">
+ Une journée &laquo;&nbsp;laptops open&nbsp;&raquo; pour indie devs et early-stage founders, en suivi du Day 1 conférence. Recap interactif des 16 features Anthropic, des case studies clients (Spotify, Harvey, Lovable), des workshops Applied AI, et des patterns à embarquer.
+ </p>
+ <div class="hero-meta">
+ <span>📍 Londres</span>
+ <span>🗓 Mer. 20 mai 2026</span>
+ <span>⏱ 08:00 → 18:00 BST</span>
+ <span>🎙 Applied AI + founders</span>
+ </div>
+ </div>
+ <div class="hero-photo-col">
+ <figure class="hero-photo">
+ <img src="assets/robin-hero.jpg" alt="Robin Detant devant le panneau Code w/ Claude à Londres" loading="eager" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;" />
+ <figcaption class="hero-photo-caption">
+ <strong>Code w/ Claude · London</strong>
+ Sur place · 20 mai 2026 (Extended).
+ </figcaption>
+ </figure>
+ <a href="#contact" class="hero-cta" data-cta="hero">
+ <span>Discutons</span>
+ <span class="arrow" aria-hidden="true">→</span>
+ </a>
+ </div>
+ </div>
+ <div class="stats" aria-label="Chiffres clés">
+ <div class="stat"><div class="stat-value">16</div><div class="stat-label">Features Day 1</div></div>
+ <div class="stat"><div class="stat-value">6×</div><div class="stat-label">Harvey · Dreaming</div></div>
+ <div class="stat"><div class="stat-value">+60%</div><div class="stat-label">Spotify · PR frequency</div></div>
+ <div class="stat"><div class="stat-value">5×</div><div class="stat-label">Coût · Advisor Strategy</div></div>
+ </div>
+ </header>
 
-  <!-- 01 TL;DR -->
-  <section id="tldr">
-    <div class="section-label">01 · TL;DR <span class="reading-time">· 60 sec de lecture</span></div>
-    <h2>Si tu ne lis qu'un seul écran.</h2>
-    <p class="lead">Cinq idées suffisent à comprendre ce que CwC London 2026 change pour quelqu'un qui build avec Claude.</p>
-    <div class="tldr-grid">
-      <div class="tldr-card">
-        <span class="tldr-num">01</span>
-        <h4>Routines</h4>
-        <p>Des sessions Claude Code <em>sans humain pour démarrer</em>. Cron, GitHub event, ou webhook API. Pro 5/j · Max 15/j · Enterprise 25/j.</p>
-      </div>
-      <div class="tldr-card">
-        <span class="tldr-num">02</span>
-        <h4>Dreaming</h4>
-        <p>Self-improvement scheduled. Harvey rapporte ~6× sur le task completion rate après activation. Research preview.</p>
-      </div>
-      <div class="tldr-card">
-        <span class="tldr-num">03</span>
-        <h4>Outcomes</h4>
-        <p>Rubric en MD + grader indépendant. +8.4% sur docx, +10.1% sur pptx en benchmarks internes. Public beta.</p>
-      </div>
-      <div class="tldr-card">
-        <span class="tldr-num">04</span>
-        <h4>Multi-agent</h4>
-        <p>Lead agent qui délègue à des spécialistes en parallèle. Workflow research+synthèse : 40 min → 8-12 min wall-clock.</p>
-      </div>
-      <div class="tldr-card">
-        <span class="tldr-num">05</span>
-        <h4>Verification &gt; generation</h4>
-        <p>Le code est devenu cheap. Le moat des équipes : comment elles <em>vérifient</em>. Structure ton code par <em>vérifiabilité</em>.</p>
-      </div>
-    </div>
-    <div class="hero-quote">
-      You are not trying to babysit Claude. You are trying to trust it enough to run.
-      <span class="author">— Synthèse Applied AI Team</span>
-    </div>
-  </section>
+ <!-- 01 TL;DR -->
+ <section id="tldr">
+ <div class="section-label">01 · TL;DR <span class="reading-time">· 60 sec de lecture</span></div>
+ <h2>Si tu ne lis qu'un seul écran.</h2>
+ <p class="lead">Cinq idées suffisent à comprendre ce que CwC London 2026 change pour quelqu'un qui build avec Claude.</p>
+ <div class="tldr-grid">
+ <div class="tldr-card">
+ <span class="tldr-num">01</span>
+ <h4>Routines</h4>
+ <p>Des sessions Claude Code <em>sans humain pour démarrer</em>. Cron, GitHub event, ou webhook API. Pro 5/j · Max 15/j · Enterprise 25/j.</p>
+ </div>
+ <div class="tldr-card">
+ <span class="tldr-num">02</span>
+ <h4>Dreaming</h4>
+ <p>Self-improvement scheduled. Harvey rapporte ~6× sur le task completion rate après activation. Research preview.</p>
+ </div>
+ <div class="tldr-card">
+ <span class="tldr-num">03</span>
+ <h4>Outcomes</h4>
+ <p>Rubric en MD + grader indépendant. +8.4% sur docx, +10.1% sur pptx en benchmarks internes. Public beta.</p>
+ </div>
+ <div class="tldr-card">
+ <span class="tldr-num">04</span>
+ <h4>Multi-agent</h4>
+ <p>Lead agent qui délègue à des spécialistes en parallèle. Workflow research+synthèse : 40 min → 8-12 min wall-clock.</p>
+ </div>
+ <div class="tldr-card">
+ <span class="tldr-num">05</span>
+ <h4>Verification &gt; generation</h4>
+ <p>Le code est devenu cheap. Le moat des équipes : comment elles <em>vérifient</em>. Structure ton code par <em>vérifiabilité</em>.</p>
+ </div>
+ </div>
+ <div class="hero-quote">
+ You are not trying to babysit Claude. You are trying to trust it enough to run.
+ <span class="author">Synthèse Applied AI Team</span>
+ </div>
+ </section>
 
-  <!-- 02 Day 1 ↔ Day 2 -->
-  <section id="day1-day2">
-    <div class="section-label">02 · Comparateur <span class="reading-time">· 4 min</span></div>
-    <h2>Day 1 annonce, Day 2 démontre.</h2>
-    <p class="lead">La promesse implicite du format Extended : ce qu'Anthropic a annoncé en keynote SF/London Day 1 est mis en pratique Day 2. Voici les mappings.</p>
+ <!-- 02 Day 1 ↔ Day 2 -->
+ <section id="day1-day2">
+ <div class="section-label">02 · Comparateur <span class="reading-time">· 4 min</span></div>
+ <h2>Day 1 annonce, Day 2 démontre.</h2>
+ <p class="lead">La promesse implicite du format Extended : ce qu'Anthropic a annoncé en keynote SF/London Day 1 est mis en pratique Day 2. Voici les mappings.</p>
 
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/6amLO7I9xdg" title="Code with Claude London 2026 — Opening Keynote" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:24px;font-style:italic;text-align:center;">▶ Opening Keynote London (Day 1) — Boris Cherny, Cat Wu, Angela Jiang, Katelyn Lesse</p>
-    <div class="comparator">
-      <div class="comparator-tabs" role="tablist">
-        <button class="comparator-tab active" data-tab="all">Tous</button>
-        <button class="comparator-tab" data-tab="autonomy">Autonomy</button>
-        <button class="comparator-tab" data-tab="visibility">Visibility</button>
-        <button class="comparator-tab" data-tab="infra">Infrastructure</button>
-      </div>
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/6amLO7I9xdg" title="Code with Claude London 2026 · Opening Keynote" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:24px;font-style:italic;text-align:center;">▶ Opening Keynote London (Day 1) · Boris Cherny, Cat Wu, Angela Jiang, Katelyn Lesse</p>
+ <div class="comparator">
+ <div class="comparator-tabs" role="tablist">
+ <button class="comparator-tab active" data-tab="all">Tous</button>
+ <button class="comparator-tab" data-tab="autonomy">Autonomy</button>
+ <button class="comparator-tab" data-tab="visibility">Visibility</button>
+ <button class="comparator-tab" data-tab="infra">Infrastructure</button>
+ </div>
 
-      <div class="comparator-row" data-tab="autonomy">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Keynote SF/London</div>
-          <h5>Routines (Boris Cherny)</h5>
-          <p>Higher-order prompts. Triggers cron, GitHub events, HTTP API. Quotas par plan.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Builder stage</div>
-          <h5>Boris live coding — ACME dashboard</h5>
-          <p>Plusieurs sessions Claude en parallèle, async. PR autofix sans jamais voir le X rouge CI.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="autonomy">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Keynote SF/London</div>
+ <h5>Routines (Boris Cherny)</h5>
+ <p>Higher-order prompts. Triggers cron, GitHub events, HTTP API. Quotas par plan.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Builder stage</div>
+ <h5>Boris live coding · ACME dashboard</h5>
+ <p>Plusieurs sessions Claude en parallèle, async. PR autofix sans jamais voir le X rouge CI.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="autonomy">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Claude Code talk</div>
-          <h5>Auto Mode</h5>
-          <p>Double check destructif + injection avant action. Moins d'interruptions.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Workshop 1</div>
-          <h5>Ship your first managed agent</h5>
-          <p>Squelette Python avec <code>memory=&quot;on&quot;</code>. Auto Mode invisible mais omniprésent.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="autonomy">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Claude Code talk</div>
+ <h5>Auto Mode</h5>
+ <p>Double check destructif + injection avant action. Moins d'interruptions.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Workshop 1</div>
+ <h5>Ship your first managed agent</h5>
+ <p>Squelette Python avec <code>memory=&quot;on&quot;</code>. Auto Mode invisible mais omniprésent.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="autonomy">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Routines deep-dive</div>
-          <h5>CI Autofix</h5>
-          <p>Surveille la PR de la création au merge. Fix root causes, pas que retry.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Robobun demo</div>
-          <h5>Agent autonome qui fixe Bun</h5>
-          <p>Reproduit → test → fix → PR. Pas de PR sans test de régression qui prouve le bug.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="autonomy">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Routines deep-dive</div>
+ <h5>CI Autofix</h5>
+ <p>Surveille la PR de la création au merge. Fix root causes, pas que retry.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Robobun demo</div>
+ <h5>Agent autonome qui fixe Bun</h5>
+ <p>Reproduit → test → fix → PR. Pas de PR sans test de régression qui prouve le bug.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="autonomy">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Managed Agents talk</div>
-          <h5>Dreaming (research preview)</h5>
-          <p>Self-improvement scheduled : review sessions passées, extract patterns, curate memories.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Workshop Memory</div>
-          <h5>Hands-on : drone descent playbook</h5>
-          <p>Agent qui apprend de ses runs. <code>descent-playbook.md</code> généré automatiquement.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="autonomy">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Managed Agents talk</div>
+ <h5>Dreaming (research preview)</h5>
+ <p>Self-improvement scheduled : review sessions passées, extract patterns, curate memories.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Workshop Memory</div>
+ <h5>Hands-on : drone descent playbook</h5>
+ <p>Agent qui apprend de ses runs. <code>descent-playbook.md</code> généré automatiquement.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="visibility">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Claude Code talk</div>
-          <h5>Agent View + Desktop refresh</h5>
-          <p>Top-level CLI view. Desktop rebuild : sessions groupées par repo, inline comments.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Demos</div>
-          <h5>« Multi-Cloding » en démo live</h5>
-          <p>5+ sessions parallèles managées sans chaos terminal.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="visibility">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Claude Code talk</div>
+ <h5>Agent View + Desktop refresh</h5>
+ <p>Top-level CLI view. Desktop rebuild : sessions groupées par repo, inline comments.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Demos</div>
+ <h5>« Multi-Cloding » en démo live</h5>
+ <p>5+ sessions parallèles managées sans chaos terminal.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="infra">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Platform talk</div>
-          <h5>Multiagent Orchestration (beta)</h5>
-          <p>Lead agent + specialists en parallèle. Shared filesystem. Console traceability.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Workshop 4 + Live battle</div>
-          <h5>Pattern Planner / Generator / Evaluator</h5>
-          <p>Repo public <code>cwc-long-running-agents</code>. Context resets entre agents.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="infra">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Platform talk</div>
+ <h5>Multiagent Orchestration (beta)</h5>
+ <p>Lead agent + specialists en parallèle. Shared filesystem. Console traceability.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Workshop 4 + Live battle</div>
+ <h5>Pattern Planner / Generator / Evaluator</h5>
+ <p>Repo public <code>cwc-long-running-agents</code>. Context resets entre agents.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="infra">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · Platform infra talk</div>
-          <h5>MCP Tunnels (research preview)</h5>
-          <p>Accès aux MCP privés derrière firewall sans exposition publique.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Demo growth agent</div>
-          <h5>Agent Slack qui query DW interne</h5>
-          <p>Data warehouse + feature flag service, les deux derrière firewall. Aucun ne touche internet public.</p>
-        </div>
-      </div>
+ <div class="comparator-row" data-tab="infra">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · Platform infra talk</div>
+ <h5>MCP Tunnels (research preview)</h5>
+ <p>Accès aux MCP privés derrière firewall sans exposition publique.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Demo growth agent</div>
+ <h5>Agent Slack qui query DW interne</h5>
+ <p>Data warehouse + feature flag service, les deux derrière firewall. Aucun ne touche internet public.</p>
+ </div>
+ </div>
 
-      <div class="comparator-row" data-tab="infra">
-        <div class="comparator-cell day1">
-          <div class="ctx">Day 1 · API talk</div>
-          <h5>Advisor Strategy</h5>
-          <p>Executor Sonnet + Advisor Opus. Frontier quality à 5× moins cher.</p>
-        </div>
-        <div class="comparator-arrow" aria-hidden="true">→</div>
-        <div class="comparator-cell day2">
-          <div class="ctx">Day 2 · Eve Legal case</div>
-          <h5>Renouvellements contrats M&A</h5>
-          <p>Sonnet lit, Opus re-classifie sur signal faible. AT RISK détecté qu'un Sonnet seul aurait raté.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+ <div class="comparator-row" data-tab="infra">
+ <div class="comparator-cell day1">
+ <div class="ctx">Day 1 · API talk</div>
+ <h5>Advisor Strategy</h5>
+ <p>Executor Sonnet + Advisor Opus. Frontier quality à 5× moins cher.</p>
+ </div>
+ <div class="comparator-arrow" aria-hidden="true">→</div>
+ <div class="comparator-cell day2">
+ <div class="ctx">Day 2 · Eve Legal case</div>
+ <h5>Renouvellements contrats M&A</h5>
+ <p>Sonnet lit, Opus re-classifie sur signal faible. AT RISK détecté qu'un Sonnet seul aurait raté.</p>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- 03 Feature matrix -->
-  <section id="features">
-    <div class="section-label">03 · Explorateur de features <span class="reading-time">· filtrable</span></div>
-    <h2>Les 16 features Day 1, jouables.</h2>
-    <p class="lead">Filtre par couche, statut de disponibilité. Clique sur une carte pour le détail complet.</p>
+ <!-- 03 Feature matrix -->
+ <section id="features">
+ <div class="section-label">03 · Explorateur de features <span class="reading-time">· filtrable</span></div>
+ <h2>Les 16 features Day 1, jouables.</h2>
+ <p class="lead">Filtre par couche, statut de disponibilité. Clique sur une carte pour le détail complet.</p>
 
-    <div class="matrix-toolbar" role="toolbar" aria-label="Filtres des features">
-      <div class="grp">
-        <span class="grp-label">Couche</span>
-        <button class="chip active" data-filter="layer-all">Toutes <span class="chip-count">16</span></button>
-        <button class="chip" data-filter="layer-autonomy">Autonomy <span class="chip-count">5</span></button>
-        <button class="chip" data-filter="layer-visibility">Visibility <span class="chip-count">4</span></button>
-        <button class="chip" data-filter="layer-infra">Infrastructure <span class="chip-count">7</span></button>
-      </div>
-      <div class="grp">
-        <span class="grp-label">Statut</span>
-        <button class="chip active" data-filter="status-all">Tous</button>
-        <button class="chip" data-filter="status-ga">GA</button>
-        <button class="chip" data-filter="status-beta">Beta</button>
-        <button class="chip" data-filter="status-preview">Preview</button>
-      </div>
-    </div>
+ <div class="matrix-toolbar" role="toolbar" aria-label="Filtres des features">
+ <div class="grp">
+ <span class="grp-label">Couche</span>
+ <button class="chip active" data-filter="layer-all">Toutes <span class="chip-count">16</span></button>
+ <button class="chip" data-filter="layer-autonomy">Autonomy <span class="chip-count">5</span></button>
+ <button class="chip" data-filter="layer-visibility">Visibility <span class="chip-count">4</span></button>
+ <button class="chip" data-filter="layer-infra">Infrastructure <span class="chip-count">7</span></button>
+ </div>
+ <div class="grp">
+ <span class="grp-label">Statut</span>
+ <button class="chip active" data-filter="status-all">Tous</button>
+ <button class="chip" data-filter="status-ga">GA</button>
+ <button class="chip" data-filter="status-beta">Beta</button>
+ <button class="chip" data-filter="status-preview">Preview</button>
+ </div>
+ </div>
 
-    <div class="feature-grid" id="featureGrid">
-      <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="auto-mode">
-        <div class="feature-card-top"><h4>Auto Mode</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
-        <p>Double check destructif + injection avant action. Moins d'interruptions, moins de babysitting.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="routines">
-        <div class="feature-card-top"><h4>Routines</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
-        <p>Sessions Claude Code déclenchées par cron, GitHub events ou API. Async-first.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="ci-autofix">
-        <div class="feature-card-top"><h4>CI Autofix</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
-        <p>Surveille la PR de la création au merge. Fix les root causes, pas que retry.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="work-trees">
-        <div class="feature-card-top"><h4>Work Trees natifs</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
-        <p>Sessions parallèles isolées sur le même repo. Plus de fichiers écrasés.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="auto-memory">
-        <div class="feature-card-top"><h4>Auto Memory</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
-        <p>Carnet local <code>memory.md</code> indexé. Reste sur ta machine, jamais push.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="agent-view">
-        <div class="feature-card-top"><h4>Agent View (CLI)</h4><span class="badge badge-layer-visibility">Visibility</span></div>
-        <p>Top-level view de toutes les sessions. Dispatch sans entrer dans la session.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="remote-control">
-        <div class="feature-card-top"><h4>Remote Control</h4><span class="badge badge-layer-visibility">Visibility</span></div>
-        <p>Contrôle ta session depuis mobile ou navigateur. Push notif sur input request.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="desktop">
-        <div class="feature-card-top"><h4>Desktop App rebuild</h4><span class="badge badge-layer-visibility">Visibility</span></div>
-        <p>Sessions par repo, plans inspectables, inline comments, GitHub natif.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="tui">
-        <div class="feature-card-top"><h4>Flicker-free TUI</h4><span class="badge badge-layer-visibility">Visibility</span></div>
-        <p>Virtualised scrollback. Mémoire flat. Éléments cliquables.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="sandboxes">
-        <div class="feature-card-top"><h4>Self-hosted Sandboxes</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Bring your own compute. Cloudflare, Daytona, Modal, Vercel.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="preview" data-detail="mcp-tunnels">
-        <div class="feature-card-top"><h4>MCP Tunnels</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Accès aux MCP privés derrière firewall sans exposition publique.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-preview">Research preview</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="security">
-        <div class="feature-card-top"><h4>Claude Security</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Scanne la nuit. Classifie par sévérité. Kicke une session de fix.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="advisor">
-        <div class="feature-card-top"><h4>Advisor Strategy</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Executor Sonnet + Advisor Opus on-demand. Frontier quality à 5× moins cher.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="tool-search">
-        <div class="feature-card-top"><h4>Tool Search</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Retrieve dynamique des tools pertinents. Lovable : −10% tokens.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="prog-tool">
-        <div class="feature-card-top"><h4>Programmatic Tool Calling</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Claude écrit un mini-script pour extraire la portion pertinente d'un gros tool output.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-      <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="cache">
-        <div class="feature-card-top"><h4>Auto Prompt Caching</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
-        <p>Targets : &gt;80% hit en prod. GitHub vise &gt;94%.</p>
-        <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
-        <div class="feature-card-cta">Détails →</div>
-      </button>
-    </div>
-  </section>
+ <div class="feature-grid" id="featureGrid">
+ <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="auto-mode">
+ <div class="feature-card-top"><h4>Auto Mode</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
+ <p>Double check destructif + injection avant action. Moins d'interruptions, moins de babysitting.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="routines">
+ <div class="feature-card-top"><h4>Routines</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
+ <p>Sessions Claude Code déclenchées par cron, GitHub events ou API. Async-first.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="ci-autofix">
+ <div class="feature-card-top"><h4>CI Autofix</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
+ <p>Surveille la PR de la création au merge. Fix les root causes, pas que retry.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="work-trees">
+ <div class="feature-card-top"><h4>Work Trees natifs</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
+ <p>Sessions parallèles isolées sur le même repo. Plus de fichiers écrasés.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="autonomy" data-status="ga" data-detail="auto-memory">
+ <div class="feature-card-top"><h4>Auto Memory</h4><span class="badge badge-layer-autonomy">Autonomy</span></div>
+ <p>Carnet local <code>memory.md</code> indexé. Reste sur ta machine, jamais push.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="agent-view">
+ <div class="feature-card-top"><h4>Agent View (CLI)</h4><span class="badge badge-layer-visibility">Visibility</span></div>
+ <p>Top-level view de toutes les sessions. Dispatch sans entrer dans la session.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="remote-control">
+ <div class="feature-card-top"><h4>Remote Control</h4><span class="badge badge-layer-visibility">Visibility</span></div>
+ <p>Contrôle ta session depuis mobile ou navigateur. Push notif sur input request.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="desktop">
+ <div class="feature-card-top"><h4>Desktop App rebuild</h4><span class="badge badge-layer-visibility">Visibility</span></div>
+ <p>Sessions par repo, plans inspectables, inline comments, GitHub natif.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="visibility" data-status="ga" data-detail="tui">
+ <div class="feature-card-top"><h4>Flicker-free TUI</h4><span class="badge badge-layer-visibility">Visibility</span></div>
+ <p>Virtualised scrollback. Mémoire flat. Éléments cliquables.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="sandboxes">
+ <div class="feature-card-top"><h4>Self-hosted Sandboxes</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Bring your own compute. Cloudflare, Daytona, Modal, Vercel.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="preview" data-detail="mcp-tunnels">
+ <div class="feature-card-top"><h4>MCP Tunnels</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Accès aux MCP privés derrière firewall sans exposition publique.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-preview">Research preview</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="security">
+ <div class="feature-card-top"><h4>Claude Security</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Scanne la nuit. Classifie par sévérité. Kicke une session de fix.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="advisor">
+ <div class="feature-card-top"><h4>Advisor Strategy</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Executor Sonnet + Advisor Opus on-demand. Frontier quality à 5× moins cher.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="tool-search">
+ <div class="feature-card-top"><h4>Tool Search</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Retrieve dynamique des tools pertinents. Lovable : −10% tokens.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="prog-tool">
+ <div class="feature-card-top"><h4>Programmatic Tool Calling</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Claude écrit un mini-script pour extraire la portion pertinente d'un gros tool output.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ <button type="button" class="feature-card" data-layer="infra" data-status="ga" data-detail="cache">
+ <div class="feature-card-top"><h4>Auto Prompt Caching</h4><span class="badge badge-layer-infra">Infrastructure</span></div>
+ <p>Targets : &gt;80% hit en prod. GitHub vise &gt;94%.</p>
+ <div class="feature-card-tags"><span class="badge badge-status-ga">GA</span></div>
+ <div class="feature-card-cta">Détails →</div>
+ </button>
+ </div>
+ </section>
 
-  <!-- 04 Customers -->
-  <section id="customers">
-    <div class="section-label">04 · Customer case studies <span class="reading-time">· 6 min</span></div>
-    <h2>Qui en fait quoi, avec quels résultats.</h2>
-    <p class="lead">Les 8 entreprises citées comme références d'usage en production. Chaque card pointe vers une source vérifiable. Les chiffres marqués <em>« non communiqué »</em> sont des cas où Anthropic mentionne la référence sans publier de KPI public.</p>
+ <!-- 04 Customers -->
+ <section id="customers">
+ <div class="section-label">04 · Customer case studies <span class="reading-time">· 6 min</span></div>
+ <h2>Qui en fait quoi, avec quels résultats.</h2>
+ <p class="lead">Les 8 entreprises citées comme références d'usage en production. Chaque card pointe vers une source vérifiable. Les chiffres marqués <em>« non communiqué »</em> sont des cas où Anthropic mentionne la référence sans publier de KPI public.</p>
 
-    <div class="customer-grid">
-      <article class="customer-card">
-        <div class="customer-logo">Spotify</div>
-        <div><div class="customer-metric">+60%</div><div class="customer-metric-label">PR frequency</div></div>
-        <p><strong>96%</strong> des engineers codent avec AI. Agent <strong>Honk</strong> sur Agent SDK, branché à Fleetshift + Backstage. ~50 migrations traitées (JS→TS notamment).</p>
-        <a class="src" href="https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4" target="_blank" rel="noopener">Honk Part 4 · Engineering blog ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Harvey</div>
-        <div><div class="customer-metric">~6×</div><div class="customer-metric-label">Task completion rate</div></div>
-        <p>Plateforme legal AI. Boost rapporté en interne après activation de <strong>Dreaming</strong> pour consolider la mémoire des sessions de recherche.</p>
-        <a class="src" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">Anthropic blog · Managed Agents ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Lovable</div>
-        <div><div class="customer-metric">−10%</div><div class="customer-metric-label">Tokens totaux</div></div>
-        <p>Adoption de <strong>Tool Search</strong> en prod. Moins de contexte non-pertinent → meilleur signal et performances accrues.</p>
-        <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Citation Day 1 SF ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Bun (Robobun)</div>
-        <div><div class="customer-metric">#1</div><div class="customer-metric-label">Contributeur du repo</div></div>
-        <p>Agent Claude Code autonome <strong>plus de commits sur Bun que Jarred</strong>. Reproduit chaque issue, pas de PR sans test de régression qui prouve le bug.</p>
-        <a class="src" href="https://github.com/robobun" target="_blank" rel="noopener">github.com/robobun ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">monday.com</div>
-        <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Enterprise agents</div></div>
-        <p>Cité par Anthropic comme référence enterprise agents. Cas d'usage évoqué : déploiement d'agents sur la plateforme produit. KPI public à venir.</p>
-        <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Mention Day 1 SF ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Doctolib</div>
-        <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Healthcare workflows</div></div>
-        <p>Référence européenne santé. Anthropic positionne Claude comme « workflow software for regulated healthcare ». Cas d'usage typiques : pre-auth, documentation, FHIR.</p>
-        <a class="src" href="https://www.anthropic.com/news/healthcare-life-sciences" target="_blank" rel="noopener">Healthcare news · Anthropic ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Delivery Hero</div>
-        <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Self-healing platforms</div></div>
-        <p>Cité comme exemple de plateforme qui s'auto-répare via agents. Détails techniques à recueillir auprès de leur engineering blog.</p>
-        <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Mention Day 1 SF ↗</a>
-      </article>
-      <article class="customer-card">
-        <div class="customer-logo">Legora · Eve Legal</div>
-        <div><div class="customer-metric">AT RISK</div><div class="customer-metric-label">Detection · Advisor Strategy</div></div>
-        <p>Cas démontré Day 1 : analyse de risque sur renouvellements M&A. Sonnet classifie, Opus appelé sur signal faible re-classifie en <strong>AT RISK</strong>. Sonnet seul aurait raté.</p>
-        <a class="src" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">Advisor Strategy · Anthropic ↗</a>
-      </article>
-    </div>
-  </section>
+ <div class="customer-grid">
+ <article class="customer-card">
+ <div class="customer-logo">Spotify</div>
+ <div><div class="customer-metric">+60%</div><div class="customer-metric-label">PR frequency</div></div>
+ <p><strong>96%</strong> des engineers codent avec AI. Agent <strong>Honk</strong> sur Agent SDK, branché à Fleetshift + Backstage. ~50 migrations traitées (JS→TS notamment).</p>
+ <a class="src" href="https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4" target="_blank" rel="noopener">Honk Part 4 · Engineering blog ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Harvey</div>
+ <div><div class="customer-metric">~6×</div><div class="customer-metric-label">Task completion rate</div></div>
+ <p>Plateforme legal AI. Boost rapporté en interne après activation de <strong>Dreaming</strong> pour consolider la mémoire des sessions de recherche.</p>
+ <a class="src" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">Anthropic blog · Managed Agents ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Lovable</div>
+ <div><div class="customer-metric">−10%</div><div class="customer-metric-label">Tokens totaux</div></div>
+ <p>Adoption de <strong>Tool Search</strong> en prod. Moins de contexte non-pertinent → meilleur signal et performances accrues.</p>
+ <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Citation Day 1 SF ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Bun (Robobun)</div>
+ <div><div class="customer-metric">#1</div><div class="customer-metric-label">Contributeur du repo</div></div>
+ <p>Agent Claude Code autonome <strong>plus de commits sur Bun que Jarred</strong>. Reproduit chaque issue, pas de PR sans test de régression qui prouve le bug.</p>
+ <a class="src" href="https://github.com/robobun" target="_blank" rel="noopener">github.com/robobun ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">monday.com</div>
+ <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Enterprise agents</div></div>
+ <p>Cité par Anthropic comme référence enterprise agents. Cas d'usage évoqué : déploiement d'agents sur la plateforme produit. KPI public à venir.</p>
+ <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Mention Day 1 SF ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Doctolib</div>
+ <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Healthcare workflows</div></div>
+ <p>Référence européenne santé. Anthropic positionne Claude comme « workflow software for regulated healthcare ». Cas d'usage typiques : pre-auth, documentation, FHIR.</p>
+ <a class="src" href="https://www.anthropic.com/news/healthcare-life-sciences" target="_blank" rel="noopener">Healthcare news · Anthropic ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Delivery Hero</div>
+ <div><div class="customer-metric tbd">non communiqué</div><div class="customer-metric-label">Self-healing platforms</div></div>
+ <p>Cité comme exemple de plateforme qui s'auto-répare via agents. Détails techniques à recueillir auprès de leur engineering blog.</p>
+ <a class="src" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Mention Day 1 SF ↗</a>
+ </article>
+ <article class="customer-card">
+ <div class="customer-logo">Legora · Eve Legal</div>
+ <div><div class="customer-metric">AT RISK</div><div class="customer-metric-label">Detection · Advisor Strategy</div></div>
+ <p>Cas démontré Day 1 : analyse de risque sur renouvellements M&A. Sonnet classifie, Opus appelé sur signal faible re-classifie en <strong>AT RISK</strong>. Sonnet seul aurait raté.</p>
+ <a class="src" href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">Advisor Strategy · Anthropic ↗</a>
+ </article>
+ </div>
+ </section>
 
-  <!-- 05 Founder -->
-  <section id="founder">
-    <div class="section-label">05 · Founder stage <span class="reading-time">· 8 min</span></div>
-    <h2>Founder stories : du prototype au revenu.</h2>
-    <p class="lead">Le cœur du format Extended : founders qui racontent les bets early-stage qui ont payé, et les judgement calls qu'ils ont dû faire sans manuel.</p>
+ <!-- 05 Founder -->
+ <section id="founder">
+ <div class="section-label">05 · Founder stage <span class="reading-time">· 8 min</span></div>
+ <h2>Founder stories : du prototype au revenu.</h2>
+ <p class="lead">Le cœur du format Extended : founders qui racontent les bets early-stage qui ont payé, et les judgement calls qu'ils ont dû faire sans manuel.</p>
 
-    <h3>Pattern 1 — Evals dès J1, pas après le PMF</h3>
-    <p>Tous les founders sur scène insistent : tu ne <em>débugges</em> pas un agent, tu <em>évalues</em>. Construire une suite d'evals avant le premier client.</p>
-    <div class="callout callout-insight">
-      <strong>Heuristique :</strong> si ton equity de fondateur dépend de la qualité d'output de Claude, tu dois pouvoir mesurer cette qualité automatiquement, sans humain dans la boucle. Sinon tu vis dans le doute.
-    </div>
+ <h3>Pattern 1 · Evals dès J1, pas après le PMF</h3>
+ <p>Tous les founders sur scène insistent : tu ne <em>débugges</em> pas un agent, tu <em>évalues</em>. Construire une suite d'evals avant le premier client.</p>
+ <div class="callout callout-insight">
+ <strong>Heuristique :</strong> si ton equity de fondateur dépend de la qualité d'output de Claude, tu dois pouvoir mesurer cette qualité automatiquement, sans humain dans la boucle. Sinon tu vis dans le doute.
+ </div>
 
-    <h3>Pattern 2 — Vertical avant horizontal</h3>
-    <p>Les startups gagnantes ont resserré sur un cas d'usage <em>extrêmement</em> précis. Eve Legal n'est pas « AI pour avocats » mais « analyse de risque sur renouvellements de contrats commerciaux M&A ». La précision du wedge permet :</p>
-    <ul>
-      <li>Des evals fiables (le périmètre est borné)</li>
-      <li>Un prix premium (le client identifie son ROI)</li>
-      <li>Un système de prompts spécialisé (vs. tout-en-un)</li>
-    </ul>
+ <h3>Pattern 2 · Vertical avant horizontal</h3>
+ <p>Les startups gagnantes ont resserré sur un cas d'usage <em>extrêmement</em> précis. Eve Legal n'est pas « AI pour avocats » mais « analyse de risque sur renouvellements de contrats commerciaux M&A ». La précision du wedge permet :</p>
+ <ul>
+ <li>Des evals fiables (le périmètre est borné)</li>
+ <li>Un prix premium (le client identifie son ROI)</li>
+ <li>Un système de prompts spécialisé (vs. tout-en-un)</li>
+ </ul>
 
-    <h3>Pattern 3 — Distribution avant feature</h3>
-    <p>Plusieurs founders ont admis avoir passé <strong>plus de temps sur la distribution que sur le modèle</strong>. Avec Claude qui fait 80% du boulot d'ingénierie, la différenciation se fait sur l'accès au client, le canal, la marque.</p>
-    <div class="callout callout-quote">
-      We thought our moat was the prompt. It wasn't. It was the 12 months of distribution we built while everyone else was prompting.
-      <span class="author">— Founder, B2B AI startup (citation paraphrasée)</span>
-    </div>
+ <h3>Pattern 3 · Distribution avant feature</h3>
+ <p>Plusieurs founders ont admis avoir passé <strong>plus de temps sur la distribution que sur le modèle</strong>. Avec Claude qui fait 80% du boulot d'ingénierie, la différenciation se fait sur l'accès au client, le canal, la marque.</p>
+ <div class="callout callout-quote">
+ We thought our moat was the prompt. It wasn't. It was the 12 months of distribution we built while everyone else was prompting.
+ <span class="author">Founder, B2B AI startup (citation paraphrasée)</span>
+ </div>
 
-    <h3>Judgement calls cités</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Décision</th><th>Le piège</th><th>Le choix qui a marché</th></tr></thead>
-        <tbody>
-          <tr><td>Open source vs. fermé</td><td>Vouloir capturer la valeur dès J1</td><td>Open source la stack, fermer le workflow</td></tr>
-          <tr><td>Self-hosted vs. managed</td><td>Tout self-host pour « le contrôle »</td><td>Démarrer managed, migrer si compliance le force</td></tr>
-          <tr><td>Sonnet vs. Opus</td><td>Toujours Opus « pour la qualité »</td><td>Sonnet par défaut, Opus en advisor sur les cas durs</td></tr>
-          <tr><td>Évaluer Claude vs. ton produit</td><td>Mesurer la qualité du modèle</td><td>Mesurer la qualité de <em>l'output utilisateur</em></td></tr>
-        </tbody>
-      </table>
-    </div>
+ <h3>Judgement calls cités</h3>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>Décision</th><th>Le piège</th><th>Le choix qui a marché</th></tr></thead>
+ <tbody>
+ <tr><td>Open source vs. fermé</td><td>Vouloir capturer la valeur dès J1</td><td>Open source la stack, fermer le workflow</td></tr>
+ <tr><td>Self-hosted vs. managed</td><td>Tout self-host pour « le contrôle »</td><td>Démarrer managed, migrer si compliance le force</td></tr>
+ <tr><td>Sonnet vs. Opus</td><td>Toujours Opus « pour la qualité »</td><td>Sonnet par défaut, Opus en advisor sur les cas durs</td></tr>
+ <tr><td>Évaluer Claude vs. ton produit</td><td>Mesurer la qualité du modèle</td><td>Mesurer la qualité de <em>l'output utilisateur</em></td></tr>
+ </tbody>
+ </table>
+ </div>
 
-    <h3>Riding the exponential curve</h3>
-    <p>L'idée centrale (Dianne Penn keynote SF, reprise par Matt Bleifer « The Thinking Lever ») : les modèles continuent de s'améliorer. Choses qui ne marchaient pas il y a 6 mois marchent maintenant. <strong>Retry vos use cases échoués à chaque release.</strong></p>
-    <div class="callout callout-warning">
-      <strong>Nuance honnête</strong> entendue plusieurs fois en off : personne ne sait combien de temps cette courbe tient. Mais coût marginal de re-tester un use case = quasi nul. Coût d'opportunité d'ignorer = énorme.
-    </div>
+ <h3>Riding the exponential curve</h3>
+ <p>L'idée centrale (Dianne Penn keynote SF, reprise par Matt Bleifer « The Thinking Lever ») : les modèles continuent de s'améliorer. Choses qui ne marchaient pas il y a 6 mois marchent maintenant. <strong>Retry vos use cases échoués à chaque release.</strong></p>
+ <div class="callout callout-warning">
+ <strong>Nuance honnête</strong> entendue plusieurs fois en off : personne ne sait combien de temps cette courbe tient. Mais coût marginal de re-tester un use case = quasi nul. Coût d'opportunité d'ignorer = énorme.
+ </div>
 
-    <h4>Comment « designer pour le prochain modèle » concrètement ?</h4>
-    <ol>
-      <li><strong>Construis avec évals avant features.</strong> Sans evals tu ne sauras pas <em>quand</em> le nouveau modèle débloque ton cas.</li>
-      <li><strong>Évite les workarounds prompt-engineering ultra-spécifiques.</strong> Ils créeront de la dette quand le modèle suivant n'en aura plus besoin.</li>
-      <li><strong>Architecture qui peut absorber un agent plus capable.</strong> Si demain l'agent peut faire la tâche en autonomie totale, ton produit est-il prêt à le laisser faire ?</li>
-      <li><strong>Garde une suite d'evals stable</strong> pour mesurer les sauts de capabilities, pas seulement la qualité courante.</li>
-    </ol>
+ <h4>Comment « designer pour le prochain modèle » concrètement ?</h4>
+ <ol>
+ <li><strong>Construis avec évals avant features.</strong> Sans evals tu ne sauras pas <em>quand</em> le nouveau modèle débloque ton cas.</li>
+ <li><strong>Évite les workarounds prompt-engineering ultra-spécifiques.</strong> Ils créeront de la dette quand le modèle suivant n'en aura plus besoin.</li>
+ <li><strong>Architecture qui peut absorber un agent plus capable.</strong> Si demain l'agent peut faire la tâche en autonomie totale, ton produit est-il prêt à le laisser faire ?</li>
+ <li><strong>Garde une suite d'evals stable</strong> pour mesurer les sauts de capabilities, pas seulement la qualité courante.</li>
+ </ol>
 
-    <div class="callout callout-quote">
-      The bottleneck moved from coding to everything around coding.
-      <span class="author">— Fiona Fung, Head of Eng Claude Code (Day 1 SF)</span>
-    </div>
+ <div class="callout callout-quote">
+ The bottleneck moved from coding to everything around coding.
+ <span class="author">Fiona Fung, Head of Eng Claude Code (Day 1 SF)</span>
+ </div>
 
-    <h3>Robobun, le canari dans la mine</h3>
-    <p><strong>Jarred Sumner</strong> (créateur de <a href="https://bun.com" target="_blank" rel="noopener">Bun</a>, runtime JS racheté par Anthropic en décembre 2025) a montré <a href="https://github.com/robobun" target="_blank" rel="noopener">Robobun</a> : un agent Claude Code autonome qui bosse sur le codebase Bun.</p>
-    <div class="callout callout-insight">
-      <strong>Le détail qui fait réfléchir :</strong> Robobun a maintenant fait <em>plus de commits sur Bun que Jarred lui-même</em>. Jarred a aussi un workflow où CodeRabbit et Claude Code review la même PR et <em>débattent</em> — CodeRabbit pour le style, Claude pour les chaînes de code et effets aval.
-    </div>
-  </section>
+ <h3>Robobun, le canari dans la mine</h3>
+ <p><strong>Jarred Sumner</strong> (créateur de <a href="https://bun.com" target="_blank" rel="noopener">Bun</a>, runtime JS racheté par Anthropic en décembre 2025) a montré <a href="https://github.com/robobun" target="_blank" rel="noopener">Robobun</a> : un agent Claude Code autonome qui bosse sur le codebase Bun.</p>
+ <div class="callout callout-insight">
+ <strong>Le détail qui fait réfléchir :</strong> Robobun a maintenant fait <em>plus de commits sur Bun que Jarred lui-même</em>. Jarred a aussi un workflow où CodeRabbit et Claude Code review la même PR et <em>débattent</em> · CodeRabbit pour le style, Claude pour les chaînes de code et effets aval.
+ </div>
+ </section>
 
-  <!-- 06 Builder stage -->
-  <section id="builder">
-    <div class="section-label">06 · Builder stage <span class="reading-time">· 10 min</span></div>
-    <h2>Builder stage : working demos, real code.</h2>
-    <p class="lead">Pas de slides marketing. Du live coding et des techniques pratiques que les équipes Anthropic utilisent au quotidien.</p>
+ <!-- 06 Builder stage -->
+ <section id="builder">
+ <div class="section-label">06 · Builder stage <span class="reading-time">· 10 min</span></div>
+ <h2>Builder stage : working demos, real code.</h2>
+ <p class="lead">Pas de slides marketing. Du live coding et des techniques pratiques que les équipes Anthropic utilisent au quotidien.</p>
 
-    <h3>Boris Cherny — ACME dashboard refunds (live)</h3>
-    <p>Boris exécute la démo avec l'app Claude Desktop. La tâche : ajouter les refunds au dashboard d'ACME. Contraintes annoncées en prompt :</p>
-    <ul>
-      <li><strong>Idempotence</strong> — pas de double-remboursement possible</li>
-      <li><strong>Multi-currency handling</strong></li>
-      <li><strong>Audit logging</strong> pour la compliance</li>
-    </ul>
-    <p>Le panneau droit montre l'UI web en cours de développement, avec Claude qui utilise l'interface en direct et découvre un edge-case bug pendant qu'il code.</p>
+ <h3>Boris Cherny · ACME dashboard refunds (live)</h3>
+ <p>Boris exécute la démo avec l'app Claude Desktop. La tâche : ajouter les refunds au dashboard d'ACME. Contraintes annoncées en prompt :</p>
+ <ul>
+ <li><strong>Idempotence</strong> · pas de double-remboursement possible</li>
+ <li><strong>Multi-currency handling</strong></li>
+ <li><strong>Audit logging</strong> pour la compliance</li>
+ </ul>
+ <p>Le panneau droit montre l'UI web en cours de développement, avec Claude qui utilise l'interface en direct et découvre un edge-case bug pendant qu'il code.</p>
 
-    <div class="video-wrap">
-      <iframe src="https://www.youtube.com/embed/DlTCu_pNDHE" title="Live coding — Boris Cherny & Jarred Sumner" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/DlTCu_pNDHE" title="Live coding · Boris Cherny & Jarred Sumner" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+ </div>
 
-    <h4>Le moment fort</h4>
-    <p>Boris a <em>plusieurs sessions Claude</em> qui tournent en parallèle dans l'app Desktop. Il switch entre elles et voit lesquelles ont besoin de son input.</p>
-    <div class="callout callout-quote">
-      We think that going forward a lot of code is going to be written in an async way.
-      <span class="author">— Boris Cherny</span>
-    </div>
+ <h4>Le moment fort</h4>
+ <p>Boris a <em>plusieurs sessions Claude</em> qui tournent en parallèle dans l'app Desktop. Il switch entre elles et voit lesquelles ont besoin de son input.</p>
+ <div class="callout callout-quote">
+ We think that going forward a lot of code is going to be written in an async way.
+ <span class="author">Boris Cherny</span>
+ </div>
 
-    <h3>Thariq Shihipar — « How we Claude Code »</h3>
-    <p>Le pitch d'ouverture : les agents tournent désormais 8 à 10h. Ils coûtent du vrai argent. Quand ça part en vrille à mi-parcours, ça fait mal. Comment rester dans la boucle sans hover en permanence ?</p>
+ <h3>Thariq Shihipar · « How we Claude Code »</h3>
+ <p>Le pitch d'ouverture : les agents tournent désormais 8 à 10h. Ils coûtent du vrai argent. Quand ça part en vrille à mi-parcours, ça fait mal. Comment rester dans la boucle sans hover en permanence ?</p>
 
-    <h4>Technique 1 — « Interview me »</h4>
-    <div class="callout callout-quote">
-      The magic word for prompting is "interview me." Claude really gets that and starts to learn about you.
-      <span class="author">— Thariq Shihipar, Claude Code team</span>
-    </div>
-    <p>Dis ces mots et Claude passe en mode question. Pour quelque chose de vague, attends-toi à <strong>30 à 40 questions sur plusieurs rounds</strong>. Démo originelle : « create a bill splitting app for me » (intentionnellement vague). Claude enchaîne : Qui est l'audience ? Colocataires ? Voyage en groupe ? Multi-devises ?</p>
-    <div class="callout callout-insight">
-      <strong>Sois honnête sur ce que tu ne sais pas.</strong> Utilise Claude comme thought partner pour extraire ce qui est dans ta tête, et faire émerger ce que t'avais pas pensé.
-    </div>
+ <h4>Technique 1 · « Interview me »</h4>
+ <div class="callout callout-quote">
+ The magic word for prompting is "interview me." Claude really gets that and starts to learn about you.
+ <span class="author">Thariq Shihipar, Claude Code team</span>
+ </div>
+ <p>Dis ces mots et Claude passe en mode question. Pour quelque chose de vague, attends-toi à <strong>30 à 40 questions sur plusieurs rounds</strong>. Démo originelle : « create a bill splitting app for me » (intentionnellement vague). Claude enchaîne : Qui est l'audience ? Colocataires ? Voyage en groupe ? Multi-devises ?</p>
+ <div class="callout callout-insight">
+ <strong>Sois honnête sur ce que tu ne sais pas.</strong> Utilise Claude comme thought partner pour extraire ce qui est dans ta tête, et faire émerger ce que t'avais pas pensé.
+ </div>
 
-    <h4>Technique 2 — HTML pour les plans (pas markdown)</h4>
-    <div class="callout callout-quote">
-      I have totally stopped editing markdown files. I ask Claude to edit them. And if I'm asking Claude to edit it, there are prettier ways. HTML. It can include diagrams, code paths, mockups.
-      <span class="author">— Thariq Shihipar</span>
-    </div>
-    <p>Démo : 4 directions de design pour la bill-splitting app (receipt-style, ledger, Venmo-style, card-stack), chacune comme un set de fichiers HTML avec mockups full-screen. 15 minutes pour produire 4 directions. <em>Fraction du coût en tokens.</em></p>
+ <h4>Technique 2 · HTML pour les plans (pas markdown)</h4>
+ <div class="callout callout-quote">
+ I have totally stopped editing markdown files. I ask Claude to edit them. And if I'm asking Claude to edit it, there are prettier ways. HTML. It can include diagrams, code paths, mockups.
+ <span class="author">Thariq Shihipar</span>
+ </div>
+ <p>Démo : 4 directions de design pour la bill-splitting app (receipt-style, ledger, Venmo-style, card-stack), chacune comme un set de fichiers HTML avec mockups full-screen. 15 minutes pour produire 4 directions. <em>Fraction du coût en tokens.</em></p>
 
-    <h4>Technique 3 — Verification (la partie qui compte le plus)</h4>
-    <div class="callout callout-quote">
-      Given that agents are so good at writing code, the most important thing to focus on is verification. The most talented engineers on the Claude Code team are working on verification.
-      <span class="author">— Thariq Shihipar</span>
-    </div>
-    <p>Verification environments : comme Storybook, mais conçu pour la vérification. Sa démo React loadait les composants un par un, exécutait des actions, et enregistrait des <strong>video clips des résultats</strong>. Sur le codebase Claude Code, quand il soumet une PR, il reçoit une vidéo de Claude qui teste ses changements.</p>
-    <div class="callout callout-insight">
-      <strong>Modularize by verifiability.</strong> Structure ton code pour que chaque partie soit vérifiable indépendamment. Si tu peux vérifier la state logic séparément de l'UI, et render l'UI en isolation, tu as rendu tout le système plus trustworthy pour des agents.
-    </div>
+ <h4>Technique 3 · Verification (la partie qui compte le plus)</h4>
+ <div class="callout callout-quote">
+ Given that agents are so good at writing code, the most important thing to focus on is verification. The most talented engineers on the Claude Code team are working on verification.
+ <span class="author">Thariq Shihipar</span>
+ </div>
+ <p>Verification environments : comme Storybook, mais conçu pour la vérification. Sa démo React loadait les composants un par un, exécutait des actions, et enregistrait des <strong>video clips des résultats</strong>. Sur le codebase Claude Code, quand il soumet une PR, il reçoit une vidéo de Claude qui teste ses changements.</p>
+ <div class="callout callout-insight">
+ <strong>Modularize by verifiability.</strong> Structure ton code pour que chaque partie soit vérifiable indépendamment. Si tu peux vérifier la state logic séparément de l'UI, et render l'UI en isolation, tu as rendu tout le système plus trustworthy pour des agents.
+ </div>
 
-    <h3>Jarred Sumner — Robobun teardown</h3>
-    <p>L'agent tourne en continu sur le repo Bun. Pour chaque issue ouverte :</p>
-    <ol>
-      <li>Reproduit le bug localement (lance du code dans un sandbox)</li>
-      <li>Génère un test de régression qui <strong>échoue sur la version actuelle</strong></li>
-      <li>Tente un fix sur une branche</li>
-      <li>N'ouvre une PR <strong>que si</strong> le test passe sur la branche fix</li>
-    </ol>
-    <p>La PR vient de <code>@robobun</code>, est reviewée par <code>@coderabbitai</code> et <code>@claude</code>, puis demande l'approbation humaine pour merge.</p>
-    <div class="callout callout-insight">
-      <strong>Le filtre clé</strong> est l'étape 2 : il ne suffit pas de générer un fix plausible. Il faut prouver le bug par un test reproductible. Ça élimine 80% des PRs « cosmétiques » ou hallucinées.
-    </div>
-  </section>
+ <h3>Jarred Sumner · Robobun teardown</h3>
+ <p>L'agent tourne en continu sur le repo Bun. Pour chaque issue ouverte :</p>
+ <ol>
+ <li>Reproduit le bug localement (lance du code dans un sandbox)</li>
+ <li>Génère un test de régression qui <strong>échoue sur la version actuelle</strong></li>
+ <li>Tente un fix sur une branche</li>
+ <li>N'ouvre une PR <strong>que si</strong> le test passe sur la branche fix</li>
+ </ol>
+ <p>La PR vient de <code>@robobun</code>, est reviewée par <code>@coderabbitai</code> et <code>@claude</code>, puis demande l'approbation humaine pour merge.</p>
+ <div class="callout callout-insight">
+ <strong>Le filtre clé</strong> est l'étape 2 : il ne suffit pas de générer un fix plausible. Il faut prouver le bug par un test reproductible. Ça élimine 80% des PRs « cosmétiques » ou hallucinées.
+ </div>
+ </section>
 
-  <!-- 07 Workshops -->
-  <section id="workshops">
-    <div class="section-label">07 · Workshops Applied AI <span class="reading-time">· parcours guidé</span></div>
-    <h2>Workshops : laptops open, hands on.</h2>
-    <p class="lead">Les hands-on sessions qu'Anthropic utilise pour former son propre staff, adaptées pour la salle. Cinq étapes qui composent un programme cohérent.</p>
+ <!-- 07 Workshops -->
+ <section id="workshops">
+ <div class="section-label">07 · Workshops Applied AI <span class="reading-time">· parcours guidé</span></div>
+ <h2>Workshops : laptops open, hands on.</h2>
+ <p class="lead">Les hands-on sessions qu'Anthropic utilise pour former son propre staff, adaptées pour la salle. Cinq étapes qui composent un programme cohérent.</p>
 
-    <div class="callout">
-      <strong>L'arc narratif :</strong> ship your first managed agent → give it memory → write evals that move the score → compose multi-agent systems → put it all to the test in a live agent battle. Volontairement progressif.
-    </div>
+ <div class="callout">
+ <strong>L'arc narratif :</strong> ship your first managed agent → give it memory → write evals that move the score → compose multi-agent systems → put it all to the test in a live agent battle. Volontairement progressif.
+ </div>
 
-    <div class="stepper">
-      <div class="step active" data-step="1">
-        <div class="step-num">1</div>
-        <div class="step-content">
-          <div class="meta">Workshop · ~75min · Managed Agents</div>
-          <h4>Ship your first managed agent</h4>
-          <p>Du hello-world au premier déploiement. Squelette Python, outcomes rubric, sandbox config.</p>
-        </div>
-      </div>
-      <div class="step-detail" data-step-detail="1">
-        <h5>Pourquoi « managed » ?</h5>
-        <p>Claude Managed Agents (public beta depuis le 8 avril 2026) est une couche au-dessus de l'API. Au lieu de tenir toi-même la boucle d'agent (prompts, tool calling, retry, memory, logs), tu déclares <em>quoi</em> et la plateforme gère <em>comment</em>.</p>
+ <div class="stepper">
+ <div class="step active" data-step="1">
+ <div class="step-num">1</div>
+ <div class="step-content">
+ <div class="meta">Workshop · ~75min · Managed Agents</div>
+ <h4>Ship your first managed agent</h4>
+ <p>Du hello-world au premier déploiement. Squelette Python, outcomes rubric, sandbox config.</p>
+ </div>
+ </div>
+ <div class="step-detail" data-step-detail="1">
+ <h5>Pourquoi « managed » ?</h5>
+ <p>Claude Managed Agents (public beta depuis le 8 avril 2026) est une couche au-dessus de l'API. Au lieu de tenir toi-même la boucle d'agent (prompts, tool calling, retry, memory, logs), tu déclares <em>quoi</em> et la plateforme gère <em>comment</em>.</p>
 
-        <div class="table-wrap"><table>
-          <thead><tr><th>Tu fournis</th><th>La plateforme gère</th></tr></thead>
-          <tbody>
-            <tr><td>Un prompt système</td><td>Boucle d'inférence</td></tr>
-            <tr><td>La liste des tools (MCP)</td><td>Tool calling, parsing, retry</td></tr>
-            <tr><td>Un rubric d'outcomes (optionnel)</td><td>Grader, re-runs, scoring</td></tr>
-            <tr><td>Un sandbox config (optionnel)</td><td>Exécution code, isolation</td></tr>
-            <tr><td>Une politique de mémoire</td><td>Stockage, retrieval, dreaming</td></tr>
-          </tbody>
-        </table></div>
+ <div class="table-wrap"><table>
+ <thead><tr><th>Tu fournis</th><th>La plateforme gère</th></tr></thead>
+ <tbody>
+ <tr><td>Un prompt système</td><td>Boucle d'inférence</td></tr>
+ <tr><td>La liste des tools (MCP)</td><td>Tool calling, parsing, retry</td></tr>
+ <tr><td>Un rubric d'outcomes (optionnel)</td><td>Grader, re-runs, scoring</td></tr>
+ <tr><td>Un sandbox config (optionnel)</td><td>Exécution code, isolation</td></tr>
+ <tr><td>Une politique de mémoire</td><td>Stockage, retrieval, dreaming</td></tr>
+ </tbody>
+ </table></div>
 
-        <div class="code-header"><span class="code-lang">python · claude-platform-sdk</span><button class="copy-btn">Copier</button></div>
+ <div class="code-header"><span class="code-lang">python · claude-platform-sdk</span><button class="copy-btn">Copier</button></div>
 <pre><code><span class="tok-key">from</span> claude_platform <span class="tok-key">import</span> ManagedAgent, Tool
 
 agent = ManagedAgent(
-    name=<span class="tok-str">"support-triage"</span>,
-    model=<span class="tok-str">"claude-sonnet-4-6"</span>,
-    system_prompt=<span class="tok-str">"""You triage support tickets..."""</span>,
-    tools=[
-        Tool.mcp(<span class="tok-str">"zendesk"</span>),
-        Tool.mcp(<span class="tok-str">"notion"</span>),
-        Tool.bash(),
-    ],
-    memory=<span class="tok-str">"on"</span>,                <span class="tok-com"># auto memory + dreaming</span>
-    outcomes=<span class="tok-str">"./rubric.md"</span>,     <span class="tok-com"># succès défini en MD</span>
-    sandbox=<span class="tok-str">"vercel-functions"</span>,  <span class="tok-com"># self-hosted ok</span>
+ name=<span class="tok-str">"support-triage"</span>,
+ model=<span class="tok-str">"claude-sonnet-4-6"</span>,
+ system_prompt=<span class="tok-str">"""You triage support tickets..."""</span>,
+ tools=[
+ Tool.mcp(<span class="tok-str">"zendesk"</span>),
+ Tool.mcp(<span class="tok-str">"notion"</span>),
+ Tool.bash(),
+ ],
+ memory=<span class="tok-str">"on"</span>, <span class="tok-com"># auto memory + dreaming</span>
+ outcomes=<span class="tok-str">"./rubric.md"</span>, <span class="tok-com"># succès défini en MD</span>
+ sandbox=<span class="tok-str">"vercel-functions"</span>, <span class="tok-com"># self-hosted ok</span>
 )
 
 result = agent.run(<span class="tok-str">"Ticket #5482: customer can't reset password"</span>)</code></pre>
 
-        <div class="callout callout-insight"><strong>Chiffre cité Day 1 :</strong> outcomes a lifté le success rate jusqu'à <strong>+10 points</strong> sur les benchmarks internes les plus durs (+8.4% sur docx, +10.1% sur pptx).</div>
-      </div>
+ <div class="callout callout-insight"><strong>Chiffre cité Day 1 :</strong> outcomes a lifté le success rate jusqu'à <strong>+10 points</strong> sur les benchmarks internes les plus durs (+8.4% sur docx, +10.1% sur pptx).</div>
+ </div>
 
-      <div class="step" data-step="2">
-        <div class="step-num">2</div>
-        <div class="step-content">
-          <div class="meta">Workshop · Memory & Dreaming</div>
-          <h4>Give it memory</h4>
-          <p>Les 3 niveaux : context window · memory store · dreaming. Heuristique YES/NO.</p>
-        </div>
-      </div>
-      <div class="step-detail" data-step-detail="2">
-        <h5>Les trois niveaux de mémoire</h5>
-        <div class="table-wrap"><table>
-          <thead><tr><th>Niveau</th><th>Quand</th><th>Mécanisme</th></tr></thead>
-          <tbody>
-            <tr><td>Context window</td><td>Dans une session</td><td>Tokens chargés</td></tr>
-            <tr><td>Memory store</td><td>Entre sessions</td><td>Retrieval indexé</td></tr>
-            <tr><td>Dreaming</td><td>Scheduled, offline</td><td>Self-improvement</td></tr>
-          </tbody>
-        </table></div>
+ <div class="step" data-step="2">
+ <div class="step-num">2</div>
+ <div class="step-content">
+ <div class="meta">Workshop · Memory & Dreaming</div>
+ <h4>Give it memory</h4>
+ <p>Les 3 niveaux : context window · memory store · dreaming. Heuristique YES/NO.</p>
+ </div>
+ </div>
+ <div class="step-detail" data-step-detail="2">
+ <h5>Les trois niveaux de mémoire</h5>
+ <div class="table-wrap"><table>
+ <thead><tr><th>Niveau</th><th>Quand</th><th>Mécanisme</th></tr></thead>
+ <tbody>
+ <tr><td>Context window</td><td>Dans une session</td><td>Tokens chargés</td></tr>
+ <tr><td>Memory store</td><td>Entre sessions</td><td>Retrieval indexé</td></tr>
+ <tr><td>Dreaming</td><td>Scheduled, offline</td><td>Self-improvement</td></tr>
+ </tbody>
+ </table></div>
 
-        <div class="callout callout-quote">
-          Stuffing your CLAUDE.md with every standard your team uses may feel like a good idea. You pay for it on every turn. The result is worse, more expensive performance.
-          <span class="author">— Daisy Hollman, Member of Technical Staff</span>
-        </div>
+ <div class="callout callout-quote">
+ Stuffing your CLAUDE.md with every standard your team uses may feel like a good idea. You pay for it on every turn. The result is worse, more expensive performance.
+ <span class="author">Daisy Hollman, Member of Technical Staff</span>
+ </div>
 
-        <h5>Heuristique mémoire (Anthropic)</h5>
-        <ul>
-          <li><strong>OUI</strong> — préférences de style de code projet</li>
-          <li><strong>OUI</strong> — décisions architecturales et leur rationale</li>
-          <li><strong>OUI</strong> — erreurs déjà commises (pour ne pas les répéter)</li>
-          <li><strong>NON</strong> — données métier qui changent (à fetcher fresh)</li>
-          <li><strong>NON</strong> — secrets / credentials (jamais)</li>
-        </ul>
-      </div>
+ <h5>Heuristique mémoire (Anthropic)</h5>
+ <ul>
+ <li><strong>OUI</strong> · préférences de style de code projet</li>
+ <li><strong>OUI</strong> · décisions architecturales et leur rationale</li>
+ <li><strong>OUI</strong> · erreurs déjà commises (pour ne pas les répéter)</li>
+ <li><strong>NON</strong> · données métier qui changent (à fetcher fresh)</li>
+ <li><strong>NON</strong> · secrets / credentials (jamais)</li>
+ </ul>
+ </div>
 
-      <div class="step" data-step="3">
-        <div class="step-num">3</div>
-        <div class="step-content">
-          <div class="meta">Workshop · Evals</div>
-          <h4>Write evals that move the score</h4>
-          <p>Structure golden/edge/adversarial/regressions. Rubric.md + grader pattern.</p>
-        </div>
-      </div>
-      <div class="step-detail" data-step-detail="3">
-        <h5>La structure qui fonctionne</h5>
-        <div class="code-header"><span class="code-lang">evals/</span><button class="copy-btn">Copier</button></div>
+ <div class="step" data-step="3">
+ <div class="step-num">3</div>
+ <div class="step-content">
+ <div class="meta">Workshop · Evals</div>
+ <h4>Write evals that move the score</h4>
+ <p>Structure golden/edge/adversarial/regressions. Rubric.md + grader pattern.</p>
+ </div>
+ </div>
+ <div class="step-detail" data-step-detail="3">
+ <h5>La structure qui fonctionne</h5>
+ <div class="code-header"><span class="code-lang">evals/</span><button class="copy-btn">Copier</button></div>
 <pre><code><span class="tok-com"># evals/</span>
-├── <span class="tok-key">golden_path/</span>     <span class="tok-com"># 20 cas réels typiques</span>
-├── <span class="tok-key">edge_cases/</span>      <span class="tok-com"># 30 cas qui ont déjà cassé la prod</span>
-├── <span class="tok-key">adversarial/</span>     <span class="tok-com"># 10 cas qui tentent prompt injection</span>
-├── <span class="tok-key">regressions/</span>     <span class="tok-com"># tout bug fixé = nouvel eval ici</span>
-└── <span class="tok-key">graders/</span>         <span class="tok-com"># prompts qui jugent les outputs</span>
-    ├── correctness.md
-    ├── style.md
-    └── safety.md</code></pre>
+├── <span class="tok-key">golden_path/</span> <span class="tok-com"># 20 cas réels typiques</span>
+├── <span class="tok-key">edge_cases/</span> <span class="tok-com"># 30 cas qui ont déjà cassé la prod</span>
+├── <span class="tok-key">adversarial/</span> <span class="tok-com"># 10 cas qui tentent prompt injection</span>
+├── <span class="tok-key">regressions/</span> <span class="tok-com"># tout bug fixé = nouvel eval ici</span>
+└── <span class="tok-key">graders/</span> <span class="tok-com"># prompts qui jugent les outputs</span>
+ ├── correctness.md
+ ├── style.md
+ └── safety.md</code></pre>
 
-        <h5>Rubric.md exemple</h5>
-        <div class="code-header"><span class="code-lang">customer-support/rubric.md</span><button class="copy-btn">Copier</button></div>
-<pre><code><span class="tok-com"># Customer support response — success criteria</span>
+ <h5>Rubric.md exemple</h5>
+ <div class="code-header"><span class="code-lang">customer-support/rubric.md</span><button class="copy-btn">Copier</button></div>
+<pre><code><span class="tok-com"># Customer support response · success criteria</span>
 
 A good response MUST:
 1. Address the customer's actual question (not generic)
@@ -752,623 +752,623 @@ A good response MUST NOT:
 - Use jargon (CTRL+F: "synergy", "leverage", "circle back")
 - Promise something not in the KB</code></pre>
 
-        <h5>Heuristiques</h5>
-        <ol>
-          <li><strong>Chaque bug fixé en prod devient un eval.</strong> Pas négociable.</li>
-          <li><strong>Le grader doit être lisible par un humain.</strong></li>
-          <li><strong>Score par catégorie</strong>, pas seulement moyenne.</li>
-          <li><strong>Ré-évalue à chaque release modèle.</strong></li>
-        </ol>
-      </div>
+ <h5>Heuristiques</h5>
+ <ol>
+ <li><strong>Chaque bug fixé en prod devient un eval.</strong> Pas négociable.</li>
+ <li><strong>Le grader doit être lisible par un humain.</strong></li>
+ <li><strong>Score par catégorie</strong>, pas seulement moyenne.</li>
+ <li><strong>Ré-évalue à chaque release modèle.</strong></li>
+ </ol>
+ </div>
 
-      <div class="step" data-step="4">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <div class="meta">Workshop · Multi-agent</div>
-          <h4>Compose multi-agent systems</h4>
-          <p>Pattern Planner / Generator / Evaluator. Context resets et handoff artifacts.</p>
-        </div>
-      </div>
-      <div class="step-detail" data-step-detail="4">
-        <div class="video-wrap">
-          <iframe src="https://www.youtube.com/embed/efRIrLXoOVA" title="Building Agent Harnesses for Large Codebases — Anthropic" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:18px;font-style:italic;text-align:center;">▶ Anthropic · Building Agent Harnesses for Large Codebases</p>
-        <p>Le harness Anthropic à trois agents adresse les modes d'échec courants : perte de contexte, termination prématurée, auto-évaluation biaisée. <strong>Clique sur un agent pour voir son rôle.</strong></p>
+ <div class="step" data-step="4">
+ <div class="step-num">4</div>
+ <div class="step-content">
+ <div class="meta">Workshop · Multi-agent</div>
+ <h4>Compose multi-agent systems</h4>
+ <p>Pattern Planner / Generator / Evaluator. Context resets et handoff artifacts.</p>
+ </div>
+ </div>
+ <div class="step-detail" data-step-detail="4">
+ <div class="video-wrap">
+ <iframe src="https://www.youtube.com/embed/efRIrLXoOVA" title="Building Agent Harnesses for Large Codebases · Anthropic" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:18px;font-style:italic;text-align:center;">▶ Anthropic · Building Agent Harnesses for Large Codebases</p>
+ <p>Le harness Anthropic à trois agents adresse les modes d'échec courants : perte de contexte, termination prématurée, auto-évaluation biaisée. <strong>Clique sur un agent pour voir son rôle.</strong></p>
 
-        <div class="harness-demo" id="harnessDemo">
-          <div class="harness-agent" data-agent="planner">
-            <h5><span class="agent-num">1</span> Planner</h5>
-            <p>Décompose le spec en chunks tractables.</p>
-          </div>
-          <div class="harness-agent" data-agent="generator">
-            <h5><span class="agent-num">2</span> Generator</h5>
-            <p>Produit code, tests, CI, docs.</p>
-          </div>
-          <div class="harness-agent" data-agent="evaluator">
-            <h5><span class="agent-num">3</span> Evaluator</h5>
-            <p>Évaluation indépendante du résultat.</p>
-          </div>
-        </div>
-        <div class="harness-detail" id="harnessDetail">Sélectionne un agent ci-dessus pour voir son rôle détaillé.</div>
+ <div class="harness-demo" id="harnessDemo">
+ <div class="harness-agent" data-agent="planner">
+ <h5><span class="agent-num">1</span> Planner</h5>
+ <p>Décompose le spec en chunks tractables.</p>
+ </div>
+ <div class="harness-agent" data-agent="generator">
+ <h5><span class="agent-num">2</span> Generator</h5>
+ <p>Produit code, tests, CI, docs.</p>
+ </div>
+ <div class="harness-agent" data-agent="evaluator">
+ <h5><span class="agent-num">3</span> Evaluator</h5>
+ <p>Évaluation indépendante du résultat.</p>
+ </div>
+ </div>
+ <div class="harness-detail" id="harnessDetail">Sélectionne un agent ci-dessus pour voir son rôle détaillé.</div>
 
-        <h5>Impact mesuré</h5>
-        <div class="table-wrap"><table>
-          <thead><tr><th>Setup</th><th>Durée</th><th>Coût</th><th>Résultat</th></tr></thead>
-          <tbody>
-            <tr><td>Sans Evaluator</td><td>20 min</td><td>~$9</td><td>Mécaniques de base cassées</td></tr>
-            <tr><td>Planner → Generator → Evaluator</td><td>6 h</td><td>~$200</td><td>Fonctionnellement correct</td></tr>
-          </tbody>
-        </table></div>
+ <h5>Impact mesuré</h5>
+ <div class="table-wrap"><table>
+ <thead><tr><th>Setup</th><th>Durée</th><th>Coût</th><th>Résultat</th></tr></thead>
+ <tbody>
+ <tr><td>Sans Evaluator</td><td>20 min</td><td>~$9</td><td>Mécaniques de base cassées</td></tr>
+ <tr><td>Planner → Generator → Evaluator</td><td>6 h</td><td>~$200</td><td>Fonctionnellement correct</td></tr>
+ </tbody>
+ </table></div>
 
-        <p>Repo de référence : <a href="https://github.com/anthropics/cwc-long-running-agents" target="_blank" rel="noopener">anthropics/cwc-long-running-agents</a>. Writeup : <a href="https://www.anthropic.com/engineering/harness-design-long-running-apps" target="_blank" rel="noopener">Harness design for long-running application development</a>.</p>
-      </div>
+ <p>Repo de référence : <a href="https://github.com/anthropics/cwc-long-running-agents" target="_blank" rel="noopener">anthropics/cwc-long-running-agents</a>. Writeup : <a href="https://www.anthropic.com/engineering/harness-design-long-running-apps" target="_blank" rel="noopener">Harness design for long-running application development</a>.</p>
+ </div>
 
-      <div class="step" data-step="5">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <div class="meta">Workshop · Live battle</div>
-          <h4>Live agent battle</h4>
-          <p>Compétition : correctness, coût, robustesse, observability. Patterns gagnants.</p>
-        </div>
-      </div>
-      <div class="step-detail" data-step-detail="5">
-        <h5>Format</h5>
-        <ul>
-          <li><strong>Correctness</strong> — l'agent résout-il vraiment le problème (mesuré par evals fournies) ?</li>
-          <li><strong>Coût</strong> — combien de tokens consommés ?</li>
-          <li><strong>Robustesse</strong> — tient-il face à 5 cas adversariaux non vus ?</li>
-          <li><strong>Observability</strong> — peut-on comprendre ce qui s'est passé en debug ?</li>
-        </ul>
+ <div class="step" data-step="5">
+ <div class="step-num">5</div>
+ <div class="step-content">
+ <div class="meta">Workshop · Live battle</div>
+ <h4>Live agent battle</h4>
+ <p>Compétition : correctness, coût, robustesse, observability. Patterns gagnants.</p>
+ </div>
+ </div>
+ <div class="step-detail" data-step-detail="5">
+ <h5>Format</h5>
+ <ul>
+ <li><strong>Correctness</strong> · l'agent résout-il vraiment le problème (mesuré par evals fournies) ?</li>
+ <li><strong>Coût</strong> · combien de tokens consommés ?</li>
+ <li><strong>Robustesse</strong> · tient-il face à 5 cas adversariaux non vus ?</li>
+ <li><strong>Observability</strong> · peut-on comprendre ce qui s'est passé en debug ?</li>
+ </ul>
 
-        <h5>Patterns qui gagnent (observation Anthropic)</h5>
-        <ol>
-          <li><strong>Démarrer simple</strong> — un seul agent, un seul tool. Itérer.</li>
-          <li><strong>Investir tôt dans les evals</strong> — pas après, <em>pendant</em>.</li>
-          <li><strong>Programmatic tool calling</strong> dès qu'un tool retourne &gt; 1k tokens.</li>
-          <li><strong>Hooks</strong> pour corriger comportements observés (sans gonfler le prompt).</li>
-          <li><strong>Advisor strategy</strong> uniquement après que l'executor fonctionne seul.</li>
-        </ol>
+ <h5>Patterns qui gagnent (observation Anthropic)</h5>
+ <ol>
+ <li><strong>Démarrer simple</strong> · un seul agent, un seul tool. Itérer.</li>
+ <li><strong>Investir tôt dans les evals</strong> · pas après, <em>pendant</em>.</li>
+ <li><strong>Programmatic tool calling</strong> dès qu'un tool retourne &gt; 1k tokens.</li>
+ <li><strong>Hooks</strong> pour corriger comportements observés (sans gonfler le prompt).</li>
+ <li><strong>Advisor strategy</strong> uniquement après que l'executor fonctionne seul.</li>
+ </ol>
 
-        <div class="callout callout-warning">
-          <strong>Antipatterns observés :</strong> 4 MCPs avec 15 tools chacun = prompt majoritairement composé de schémas avant que l'agent ne lise une ligne du problème. Premium token waste.
-        </div>
-        <div class="callout callout-quote">
-          You are not trying to babysit Claude. You are trying to trust it enough to run.
-          <span class="author">— Synthèse Applied AI</span>
-        </div>
-      </div>
-    </div>
-  </section>
+ <div class="callout callout-warning">
+ <strong>Antipatterns observés :</strong> 4 MCPs avec 15 tools chacun = prompt majoritairement composé de schémas avant que l'agent ne lise une ligne du problème. Premium token waste.
+ </div>
+ <div class="callout callout-quote">
+ You are not trying to babysit Claude. You are trying to trust it enough to run.
+ <span class="author">Synthèse Applied AI</span>
+ </div>
+ </div>
+ </div>
+ </section>
 
-  <!-- 08 Themes -->
-  <section id="themes">
-    <div class="section-label">08 · Thèmes transverses <span class="reading-time">· 6 min</span></div>
-    <h2>Ce qui revient partout.</h2>
-    <p class="lead">Cinq idées clés qui structurent toute la journée et qui méritent d'être retenues séparément des annonces produit.</p>
+ <!-- 08 Themes -->
+ <section id="themes">
+ <div class="section-label">08 · Thèmes transverses <span class="reading-time">· 6 min</span></div>
+ <h2>Ce qui revient partout.</h2>
+ <p class="lead">Cinq idées clés qui structurent toute la journée et qui méritent d'être retenues séparément des annonces produit.</p>
 
-    <h3>1 · Le context window reste une boîte</h3>
-    <p>Les capabilities ont scalé énormément (raisonnement, tool use, durée d'exécution). <strong>Le context window non.</strong> ~1M tokens depuis &gt; 1 an. Investir dans la gestion du contexte est l'une des skills à plus haut levier.</p>
+ <h3>1 · Le context window reste une boîte</h3>
+ <p>Les capabilities ont scalé énormément (raisonnement, tool use, durée d'exécution). <strong>Le context window non.</strong> ~1M tokens depuis &gt; 1 an. Investir dans la gestion du contexte est l'une des skills à plus haut levier.</p>
 
-    <div class="viz-wrap">
-      <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" aria-label="La boîte 1M tokens">
-        <rect x="20" y="40" width="560" height="160" fill="none" stroke="#cc785c" stroke-width="2" stroke-dasharray="6 4" rx="6"/>
-        <text x="300" y="30" text-anchor="middle" fill="#cc785c" font-family="JetBrains Mono, monospace" font-size="11">CONTEXT WINDOW · ~1M tokens (depuis &gt; 1 an)</text>
-        <rect x="40" y="60" width="120" height="50" fill="rgba(122,167,217,0.2)" stroke="#7aa7d9" rx="4"/>
-        <text x="100" y="90" text-anchor="middle" fill="#7aa7d9" font-family="Inter, sans-serif" font-size="11">System prompt</text>
-        <rect x="180" y="60" width="200" height="50" fill="rgba(168,144,217,0.2)" stroke="#a890d9" rx="4"/>
-        <text x="280" y="82" text-anchor="middle" fill="#a890d9" font-family="Inter, sans-serif" font-size="11">CLAUDE.md / skills / hooks</text>
-        <text x="280" y="100" text-anchor="middle" fill="#a890d9" font-family="Inter, sans-serif" font-size="10" font-style="italic">(à gérer avec parcimonie)</text>
-        <rect x="400" y="60" width="160" height="50" fill="rgba(124,184,124,0.2)" stroke="#7cb87c" rx="4"/>
-        <text x="480" y="90" text-anchor="middle" fill="#7cb87c" font-family="Inter, sans-serif" font-size="11">Tools schemas</text>
-        <rect x="40" y="130" width="520" height="50" fill="rgba(204,120,92,0.15)" stroke="#cc785c" rx="4"/>
-        <text x="300" y="155" text-anchor="middle" fill="#cc785c" font-family="Inter, sans-serif" font-size="12">Conversation + tool outputs</text>
-        <text x="300" y="172" text-anchor="middle" fill="#cc785c" font-family="Inter, sans-serif" font-size="10" font-style="italic">(grossit à chaque tour — d'où Compaction)</text>
-        <text x="300" y="220" text-anchor="middle" fill="#7e7d77" font-family="Inter, sans-serif" font-size="11">La boîte ne grandit pas. Tu choisis ce que tu mets dedans.</text>
-      </svg>
-      <div class="viz-caption">Schéma — Le context window comme contrainte fixe</div>
-    </div>
+ <div class="viz-wrap">
+ <svg viewBox="0 0 600 240" xmlns="http://www.w3.org/2000/svg" aria-label="La boîte 1M tokens">
+ <rect x="20" y="40" width="560" height="160" fill="none" stroke="#cc785c" stroke-width="2" stroke-dasharray="6 4" rx="6"/>
+ <text x="300" y="30" text-anchor="middle" fill="#cc785c" font-family="JetBrains Mono, monospace" font-size="11">CONTEXT WINDOW · ~1M tokens (depuis &gt; 1 an)</text>
+ <rect x="40" y="60" width="120" height="50" fill="rgba(122,167,217,0.2)" stroke="#7aa7d9" rx="4"/>
+ <text x="100" y="90" text-anchor="middle" fill="#7aa7d9" font-family="Inter, sans-serif" font-size="11">System prompt</text>
+ <rect x="180" y="60" width="200" height="50" fill="rgba(168,144,217,0.2)" stroke="#a890d9" rx="4"/>
+ <text x="280" y="82" text-anchor="middle" fill="#a890d9" font-family="Inter, sans-serif" font-size="11">CLAUDE.md / skills / hooks</text>
+ <text x="280" y="100" text-anchor="middle" fill="#a890d9" font-family="Inter, sans-serif" font-size="10" font-style="italic">(à gérer avec parcimonie)</text>
+ <rect x="400" y="60" width="160" height="50" fill="rgba(124,184,124,0.2)" stroke="#7cb87c" rx="4"/>
+ <text x="480" y="90" text-anchor="middle" fill="#7cb87c" font-family="Inter, sans-serif" font-size="11">Tools schemas</text>
+ <rect x="40" y="130" width="520" height="50" fill="rgba(204,120,92,0.15)" stroke="#cc785c" rx="4"/>
+ <text x="300" y="155" text-anchor="middle" fill="#cc785c" font-family="Inter, sans-serif" font-size="12">Conversation + tool outputs</text>
+ <text x="300" y="172" text-anchor="middle" fill="#cc785c" font-family="Inter, sans-serif" font-size="10" font-style="italic">(grossit à chaque tour · d'où Compaction)</text>
+ <text x="300" y="220" text-anchor="middle" fill="#7e7d77" font-family="Inter, sans-serif" font-size="11">La boîte ne grandit pas. Tu choisis ce que tu mets dedans.</text>
+ </svg>
+ <div class="viz-caption">Schéma · Le context window comme contrainte fixe</div>
+ </div>
 
-    <h3>2 · Le bottleneck a bougé</h3>
-    <p>Écrire le code n'est plus la partie lente. C'est la review, la vérification, la coordination, et le « choisir quoi construire » qui sont devenus contraignants.</p>
+ <h3>2 · Le bottleneck a bougé</h3>
+ <p>Écrire le code n'est plus la partie lente. C'est la review, la vérification, la coordination, et le « choisir quoi construire » qui sont devenus contraignants.</p>
 
-    <div class="viz-wrap">
-      <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" aria-label="PRs hebdomadaires Noah Zweben">
-        <line x1="60" y1="160" x2="560" y2="160" stroke="#3a3a40"/>
-        <line x1="60" y1="40" x2="60" y2="160" stroke="#3a3a40"/>
-        <text x="40" y="44" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">1200</text>
-        <text x="40" y="100" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">600</text>
-        <text x="40" y="160" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">0</text>
-        <polyline points="100,120 200,108 300,80 400,60 500,46" fill="none" stroke="#cc785c" stroke-width="2"/>
-        <circle cx="100" cy="120" r="4" fill="#cc785c"/>
-        <circle cx="200" cy="108" r="4" fill="#cc785c"/>
-        <circle cx="300" cy="80" r="4" fill="#cc785c"/>
-        <circle cx="400" cy="60" r="4" fill="#cc785c"/>
-        <circle cx="500" cy="46" r="4" fill="#cc785c"/>
-        <text x="100" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Jan</text>
-        <text x="200" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Fév</text>
-        <text x="300" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Mars</text>
-        <text x="400" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Avr</text>
-        <text x="500" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Mai</text>
-        <text x="510" y="40" fill="#cc785c" font-size="11" font-weight="600">+300%</text>
-      </svg>
-      <div class="viz-caption">PRs hebdomadaires — équipe Noah Zweben · de ~500 à ~1150 en 5 mois</div>
-    </div>
-    <p>Conséquence : 1 seul engineer dédié à la doc → la doc devient le bottleneck → routines de doc-asynchrone overnight.</p>
+ <div class="viz-wrap">
+ <svg viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" aria-label="PRs hebdomadaires Noah Zweben">
+ <line x1="60" y1="160" x2="560" y2="160" stroke="#3a3a40"/>
+ <line x1="60" y1="40" x2="60" y2="160" stroke="#3a3a40"/>
+ <text x="40" y="44" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">1200</text>
+ <text x="40" y="100" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">600</text>
+ <text x="40" y="160" text-anchor="end" fill="#7e7d77" font-family="JetBrains Mono, monospace" font-size="10">0</text>
+ <polyline points="100,120 200,108 300,80 400,60 500,46" fill="none" stroke="#cc785c" stroke-width="2"/>
+ <circle cx="100" cy="120" r="4" fill="#cc785c"/>
+ <circle cx="200" cy="108" r="4" fill="#cc785c"/>
+ <circle cx="300" cy="80" r="4" fill="#cc785c"/>
+ <circle cx="400" cy="60" r="4" fill="#cc785c"/>
+ <circle cx="500" cy="46" r="4" fill="#cc785c"/>
+ <text x="100" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Jan</text>
+ <text x="200" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Fév</text>
+ <text x="300" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Mars</text>
+ <text x="400" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Avr</text>
+ <text x="500" y="180" text-anchor="middle" fill="#a8a7a1" font-size="10">Mai</text>
+ <text x="510" y="40" fill="#cc785c" font-size="11" font-weight="600">+300%</text>
+ </svg>
+ <div class="viz-caption">PRs hebdomadaires · équipe Noah Zweben · de ~500 à ~1150 en 5 mois</div>
+ </div>
+ <p>Conséquence : 1 seul engineer dédié à la doc → la doc devient le bottleneck → routines de doc-asynchrone overnight.</p>
 
-    <h3>3 · Verification &gt; code generation</h3>
-    <p>Les modèles écrivent du code rapidement et plutôt bien. Ce qui distingue les équipes : leur capacité à vérifier l'output indépendamment. Structurer le code par <em>vérifiabilité</em>, pas par convenance mentale.</p>
+ <h3>3 · Verification &gt; code generation</h3>
+ <p>Les modèles écrivent du code rapidement et plutôt bien. Ce qui distingue les équipes : leur capacité à vérifier l'output indépendamment. Structurer le code par <em>vérifiabilité</em>, pas par convenance mentale.</p>
 
-    <h3>4 · Build for the next model</h3>
-    <p>Refaire tourner les use cases qui ne marchaient pas il y a 6 mois. Garder une suite d'evals stable pour mesurer les sauts. Architecture qui peut absorber un agent plus capable demain.</p>
+ <h3>4 · Build for the next model</h3>
+ <p>Refaire tourner les use cases qui ne marchaient pas il y a 6 mois. Garder une suite d'evals stable pour mesurer les sauts. Architecture qui peut absorber un agent plus capable demain.</p>
 
-    <div class="video-wrap" style="max-width: 720px; margin: 16px auto;">
-      <iframe src="https://www.youtube.com/embed/5CjdS_9xI9E" title="The Thinking Lever — Matt Bleifer · Anthropic" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:24px;font-style:italic;text-align:center;">▶ Matt Bleifer · The Thinking Lever — pourquoi retry vos use cases échoués à chaque release modèle</p>
+ <div class="video-wrap" style="max-width: 720px; margin: 16px auto;">
+ <iframe src="https://www.youtube.com/embed/5CjdS_9xI9E" title="The Thinking Lever · Matt Bleifer · Anthropic" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+ </div>
+ <p style="font-size:12px;color:var(--text-dim);margin-top:-10px;margin-bottom:24px;font-style:italic;text-align:center;">▶ Matt Bleifer · The Thinking Lever · pourquoi retry vos use cases échoués à chaque release modèle</p>
 
-    <h3>5 · AI-native teams look different</h3>
-    <div class="callout callout-quote">
-      Claudify everything you can. Then there's room to adapt: how Claude shows up in a team's triage, what your planning rituals look like, which workflows get Claudified first.
-      <span class="author">— Fiona Fung (Day 1 SF, repris en Founder stage)</span>
-    </div>
+ <h3>5 · AI-native teams look different</h3>
+ <div class="callout callout-quote">
+ Claudify everything you can. Then there's room to adapt: how Claude shows up in a team's triage, what your planning rituals look like, which workflows get Claudified first.
+ <span class="author">Fiona Fung (Day 1 SF, repris en Founder stage)</span>
+ </div>
 
-    <h3>Mini-démo — Effort level (Pokemon analogy)</h3>
-    <p>L'analogie Pokemon de Thariq : à effort faible, Claude prend des raccourcis (speedrun). À effort élevé, il plannifie avec soin. La plupart des gens chez Anthropic gardent le défaut.</p>
+ <h3>Mini-démo · Effort level (Pokemon analogy)</h3>
+ <p>L'analogie Pokemon de Thariq : à effort faible, Claude prend des raccourcis (speedrun). À effort élevé, il plannifie avec soin. La plupart des gens chez Anthropic gardent le défaut.</p>
 
-    <div class="slider-demo">
-      <div class="slider-track" id="sliderTrack">
-        <div class="slider-fill" id="sliderFill"></div>
-        <div class="slider-thumb" id="sliderThumb"></div>
-      </div>
-      <div class="slider-labels">
-        <span>Low</span><span>Default</span><span>High</span><span>Extra high</span>
-      </div>
-      <div class="slider-output" id="sliderOutput">
-        <strong>Default</strong>
-        Comportement standard. Plan implicite, exécution directe. Le bon défaut pour 80% des tâches. La plupart des gens chez Anthropic ne le changent pas.
-      </div>
-    </div>
+ <div class="slider-demo">
+ <div class="slider-track" id="sliderTrack">
+ <div class="slider-fill" id="sliderFill"></div>
+ <div class="slider-thumb" id="sliderThumb"></div>
+ </div>
+ <div class="slider-labels">
+ <span>Low</span><span>Default</span><span>High</span><span>Extra high</span>
+ </div>
+ <div class="slider-output" id="sliderOutput">
+ <strong>Default</strong>
+ Comportement standard. Plan implicite, exécution directe. Le bon défaut pour 80% des tâches. La plupart des gens chez Anthropic ne le changent pas.
+ </div>
+ </div>
 
-    <h3>Mini-démo — Cost calculator Advisor Strategy</h3>
-    <p>Simule l'économie réalisée en passant d'Opus pur à un setup Sonnet executor + Opus advisor on-demand. Ajuste les sliders.</p>
+ <h3>Mini-démo · Cost calculator Advisor Strategy</h3>
+ <p>Simule l'économie réalisée en passant d'Opus pur à un setup Sonnet executor + Opus advisor on-demand. Ajuste les sliders.</p>
 
-    <div class="cost-calc">
-      <h4>Calculateur</h4>
-      <div class="cost-inputs">
-        <div class="cost-field">
-          <label for="ccCalls">Calls / mois</label>
-          <input type="range" id="ccCalls" min="100" max="100000" step="100" value="10000">
-          <span class="val" id="ccCallsVal">10 000</span>
-        </div>
-        <div class="cost-field">
-          <label for="ccHard">% cas difficiles (→ Opus)</label>
-          <input type="range" id="ccHard" min="0" max="100" step="1" value="15">
-          <span class="val" id="ccHardVal">15%</span>
-        </div>
-        <div class="cost-field">
-          <label for="ccTokens">Tokens / call (in + out moyen)</label>
-          <input type="range" id="ccTokens" min="500" max="20000" step="500" value="3000">
-          <span class="val" id="ccTokensVal">3 000</span>
-        </div>
-      </div>
-      <div class="cost-result">
-        <div class="cost-card"><div class="lab">100% Opus</div><div class="val" id="ccOpus">—</div></div>
-        <div class="cost-card"><div class="lab">Sonnet + Opus advisor</div><div class="val" id="ccAdvisor">—</div></div>
-        <div class="cost-card savings"><div class="lab">Économie</div><div class="val" id="ccSavings">—</div></div>
-      </div>
-      <p style="font-size:11px;color:var(--text-dim);margin-top:12px;margin-bottom:0;">Prix indicatifs (mai 2026) : Opus 4.6 = $15/$75 per Mtok in/out. Sonnet 4.6 = $3/$15. Calcul = mix Sonnet sur 100% des calls + Opus uniquement sur le % difficile.</p>
-    </div>
-  </section>
+ <div class="cost-calc">
+ <h4>Calculateur</h4>
+ <div class="cost-inputs">
+ <div class="cost-field">
+ <label for="ccCalls">Calls / mois</label>
+ <input type="range" id="ccCalls" min="100" max="100000" step="100" value="10000">
+ <span class="val" id="ccCallsVal">10 000</span>
+ </div>
+ <div class="cost-field">
+ <label for="ccHard">% cas difficiles (→ Opus)</label>
+ <input type="range" id="ccHard" min="0" max="100" step="1" value="15">
+ <span class="val" id="ccHardVal">15%</span>
+ </div>
+ <div class="cost-field">
+ <label for="ccTokens">Tokens / call (in + out moyen)</label>
+ <input type="range" id="ccTokens" min="500" max="20000" step="500" value="3000">
+ <span class="val" id="ccTokensVal">3 000</span>
+ </div>
+ </div>
+ <div class="cost-result">
+ <div class="cost-card"><div class="lab">100% Opus</div><div class="val" id="ccOpus"> · </div></div>
+ <div class="cost-card"><div class="lab">Sonnet + Opus advisor</div><div class="val" id="ccAdvisor"> · </div></div>
+ <div class="cost-card savings"><div class="lab">Économie</div><div class="val" id="ccSavings"> · </div></div>
+ </div>
+ <p style="font-size:11px;color:var(--text-dim);margin-top:12px;margin-bottom:0;">Prix indicatifs (mai 2026) : Opus 4.6 = $15/$75 per Mtok in/out. Sonnet 4.6 = $3/$15. Calcul = mix Sonnet sur 100% des calls + Opus uniquement sur le % difficile.</p>
+ </div>
+ </section>
 
-  <!-- 09 Glossaire -->
-  <section id="glossary">
-    <div class="section-label">09 · Glossaire <span class="reading-time">· searchable</span></div>
-    <h2>Décoder le vocabulaire.</h2>
-    <p class="lead">16 termes clés du CwC 2026. Filtre par mot-clé.</p>
-    <input type="search" class="glossary-search" id="glossarySearch" placeholder="Filtrer… (ex: dreaming, mcp, advisor)" aria-label="Filtrer le glossaire" />
-    <dl class="glossary-grid" id="glossaryGrid">
-      <div class="glossary-term"><dt>Routines</dt><dd>Sessions Claude Code déclenchées par cron, GitHub event ou API. Higher-order prompts asynchrones.</dd></div>
-      <div class="glossary-term"><dt>Dreaming</dt><dd>Process scheduled qui review les sessions et memory stores, extrait patterns, curate les mémoires. Research preview.</dd></div>
-      <div class="glossary-term"><dt>Outcomes</dt><dd>Rubric en MD lue par un grader indépendant qui score chaque output. L'agent retry avec le feedback.</dd></div>
-      <div class="glossary-term"><dt>MCP</dt><dd>Model Context Protocol. Standard ouvert pour exposer des tools à un LLM (DB, APIs, fichiers).</dd></div>
-      <div class="glossary-term"><dt>Advisor Strategy</dt><dd>Pair un petit executor (Haiku/Sonnet) avec un gros advisor (Opus) appelé uniquement sur les cas durs.</dd></div>
-      <div class="glossary-term"><dt>Compaction</dt><dd>Résume la conversation au seuil défini (suggéré 400k tokens). Sessions très longues sans mourir au mur.</dd></div>
-      <div class="glossary-term"><dt>Tool Search</dt><dd>Retrieve dynamique de tools. Évite de charger tout le schéma à chaque tour. Lovable : −10% tokens.</dd></div>
-      <div class="glossary-term"><dt>Auto Memory</dt><dd>Carnet local <code>memory.md</code> indexé. Reste sur la machine, jamais push GitHub.</dd></div>
-      <div class="glossary-term"><dt>Work Trees</dt><dd>Sessions Claude Code parallèles isolées sur le même repo. Sous-répertoire dédié par session.</dd></div>
-      <div class="glossary-term"><dt>Sandbox</dt><dd>Environnement isolé d'exécution. Self-hosted possible : Cloudflare / Daytona / Modal / Vercel.</dd></div>
-      <div class="glossary-term"><dt>Harness</dt><dd>Architecture multi-agent qui orchestre Planner / Generator / Evaluator pour les longues sessions.</dd></div>
-      <div class="glossary-term"><dt>Subagent</dt><dd>Agent spécialisé délégué par un lead agent. Contexte isolé, summary remonte seulement.</dd></div>
-      <div class="glossary-term"><dt>Hook</dt><dd>Code custom exécuté à des points précis (pre-tool, post-message). N'occupe le contexte que quand il tire.</dd></div>
-      <div class="glossary-term"><dt>Skill</dt><dd>Set de capabilities chargées à la demande. Préférable à un mega CLAUDE.md.</dd></div>
-      <div class="glossary-term"><dt>Eval</dt><dd>Cas de test pour mesurer la qualité d'un output. Golden path, edge cases, adversarial, regressions.</dd></div>
-      <div class="glossary-term"><dt>Grader</dt><dd>Prompt séparé qui évalue chaque output dans son propre contexte. Lisible par un humain.</dd></div>
-    </dl>
-  </section>
+ <!-- 09 Glossaire -->
+ <section id="glossary">
+ <div class="section-label">09 · Glossaire <span class="reading-time">· searchable</span></div>
+ <h2>Décoder le vocabulaire.</h2>
+ <p class="lead">16 termes clés du CwC 2026. Filtre par mot-clé.</p>
+ <input type="search" class="glossary-search" id="glossarySearch" placeholder="Filtrer… (ex: dreaming, mcp, advisor)" aria-label="Filtrer le glossaire" />
+ <dl class="glossary-grid" id="glossaryGrid">
+ <div class="glossary-term"><dt>Routines</dt><dd>Sessions Claude Code déclenchées par cron, GitHub event ou API. Higher-order prompts asynchrones.</dd></div>
+ <div class="glossary-term"><dt>Dreaming</dt><dd>Process scheduled qui review les sessions et memory stores, extrait patterns, curate les mémoires. Research preview.</dd></div>
+ <div class="glossary-term"><dt>Outcomes</dt><dd>Rubric en MD lue par un grader indépendant qui score chaque output. L'agent retry avec le feedback.</dd></div>
+ <div class="glossary-term"><dt>MCP</dt><dd>Model Context Protocol. Standard ouvert pour exposer des tools à un LLM (DB, APIs, fichiers).</dd></div>
+ <div class="glossary-term"><dt>Advisor Strategy</dt><dd>Pair un petit executor (Haiku/Sonnet) avec un gros advisor (Opus) appelé uniquement sur les cas durs.</dd></div>
+ <div class="glossary-term"><dt>Compaction</dt><dd>Résume la conversation au seuil défini (suggéré 400k tokens). Sessions très longues sans mourir au mur.</dd></div>
+ <div class="glossary-term"><dt>Tool Search</dt><dd>Retrieve dynamique de tools. Évite de charger tout le schéma à chaque tour. Lovable : −10% tokens.</dd></div>
+ <div class="glossary-term"><dt>Auto Memory</dt><dd>Carnet local <code>memory.md</code> indexé. Reste sur la machine, jamais push GitHub.</dd></div>
+ <div class="glossary-term"><dt>Work Trees</dt><dd>Sessions Claude Code parallèles isolées sur le même repo. Sous-répertoire dédié par session.</dd></div>
+ <div class="glossary-term"><dt>Sandbox</dt><dd>Environnement isolé d'exécution. Self-hosted possible : Cloudflare / Daytona / Modal / Vercel.</dd></div>
+ <div class="glossary-term"><dt>Harness</dt><dd>Architecture multi-agent qui orchestre Planner / Generator / Evaluator pour les longues sessions.</dd></div>
+ <div class="glossary-term"><dt>Subagent</dt><dd>Agent spécialisé délégué par un lead agent. Contexte isolé, summary remonte seulement.</dd></div>
+ <div class="glossary-term"><dt>Hook</dt><dd>Code custom exécuté à des points précis (pre-tool, post-message). N'occupe le contexte que quand il tire.</dd></div>
+ <div class="glossary-term"><dt>Skill</dt><dd>Set de capabilities chargées à la demande. Préférable à un mega CLAUDE.md.</dd></div>
+ <div class="glossary-term"><dt>Eval</dt><dd>Cas de test pour mesurer la qualité d'un output. Golden path, edge cases, adversarial, regressions.</dd></div>
+ <div class="glossary-term"><dt>Grader</dt><dd>Prompt séparé qui évalue chaque output dans son propre contexte. Lisible par un humain.</dd></div>
+ </dl>
+ </section>
 
-  <!-- 10 Speakers -->
-  <section id="speakers">
-    <div class="section-label">10 · Speakers <span class="reading-time">· galerie</span></div>
-    <h2>Qui a parlé, sur quoi.</h2>
-    <p class="lead">Les 13 voix qui structurent les 2 jours. Quotes représentatives. Liens vers leurs talks officiels.</p>
+ <!-- 10 Speakers -->
+ <section id="speakers">
+ <div class="section-label">10 · Speakers <span class="reading-time">· galerie</span></div>
+ <h2>Qui a parlé, sur quoi.</h2>
+ <p class="lead">Les 13 voix qui structurent les 2 jours. Quotes représentatives. Liens vers leurs talks officiels.</p>
 
-    <div class="speakers-grid">
-      <article class="speaker-card">
-        <div class="speaker-avatar">BC</div>
-        <h4>Boris Cherny</h4>
-        <div class="speaker-role">Head of Eng, Claude Code</div>
-        <p class="speaker-quote">A lot of code is going to be written in an async way.</p>
-        <a class="speaker-link" href="https://www.youtube.com/watch?v=DlTCu_pNDHE" target="_blank" rel="noopener">Live coding session →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">CW</div>
-        <h4>Cat Wu</h4>
-        <div class="speaker-role">Head of Product, Claude Code & Cowork</div>
-        <p class="speaker-quote">Surfaces Claude Code · Cowork keynote</p>
-        <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">AJ</div>
-        <h4>Angela Jiang</h4>
-        <div class="speaker-role">Head of Product, Claude Platform</div>
-        <p class="speaker-quote">Managed Agents · keynote London</p>
-        <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">KL</div>
-        <h4>Katelyn Lesse</h4>
-        <div class="speaker-role">Head of Eng, Claude Platform</div>
-        <p class="speaker-quote">Infra agents · sandboxes · tunnels</p>
-        <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">TS</div>
-        <h4>Thariq Shihipar</h4>
-        <div class="speaker-role">Claude Code team</div>
-        <p class="speaker-quote">The magic word for prompting is "interview me."</p>
-        <a class="speaker-link" href="https://howborisusesclaudecode.com/recap" target="_blank" rel="noopener">Workshop recap →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">JS</div>
-        <h4>Jarred Sumner</h4>
-        <div class="speaker-role">Creator of Bun, Anthropic</div>
-        <p class="speaker-quote">Robobun fait plus de commits sur Bun que moi.</p>
-        <a class="speaker-link" href="https://github.com/robobun" target="_blank" rel="noopener">github.com/robobun →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">NG</div>
-        <h4>Niklas Gustavsson</h4>
-        <div class="speaker-role">Chief Architect, Spotify</div>
-        <p class="speaker-quote">Coding is no longer the constraint.</p>
-        <a class="speaker-link" href="https://claude.com/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify" target="_blank" rel="noopener">Session officielle →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">FF</div>
-        <h4>Fiona Fung</h4>
-        <div class="speaker-role">Head of Eng, Claude Code (SF)</div>
-        <p class="speaker-quote">In technical debates, code wins.</p>
-        <a class="speaker-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">SF recap →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">DP</div>
-        <h4>Dianne Penn</h4>
-        <div class="speaker-role">Head of Product Research</div>
-        <p class="speaker-quote">Focus on automated evals and imaginative model usage.</p>
-        <a class="speaker-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">SF recap →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">DH</div>
-        <h4>Daisy Hollman</h4>
-        <div class="speaker-role">Member of Technical Staff</div>
-        <p class="speaker-quote">Stuffing CLAUDE.md costs you on every turn.</p>
-        <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">BA</div>
-        <h4>Brad Abrams</h4>
-        <div class="speaker-role">Anthropic API team</div>
-        <p class="speaker-quote">Aim for &gt;80% prompt cache hit rate in prod.</p>
-        <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">MB</div>
-        <h4>Matt Bleifer</h4>
-        <div class="speaker-role">Talk: The Thinking Lever</div>
-        <p class="speaker-quote">Retry your failed use cases at every release.</p>
-        <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
-      </article>
-      <article class="speaker-card">
-        <div class="speaker-avatar">NZ</div>
-        <h4>Noah Zweben</h4>
-        <div class="speaker-role">Developer experience</div>
-        <p class="speaker-quote">PRs +300% en 3 mois, 1 engineer doc.</p>
-        <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
-      </article>
-    </div>
-  </section>
+ <div class="speakers-grid">
+ <article class="speaker-card">
+ <div class="speaker-avatar">BC</div>
+ <h4>Boris Cherny</h4>
+ <div class="speaker-role">Head of Eng, Claude Code</div>
+ <p class="speaker-quote">A lot of code is going to be written in an async way.</p>
+ <a class="speaker-link" href="https://www.youtube.com/watch?v=DlTCu_pNDHE" target="_blank" rel="noopener">Live coding session →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">CW</div>
+ <h4>Cat Wu</h4>
+ <div class="speaker-role">Head of Product, Claude Code & Cowork</div>
+ <p class="speaker-quote">Surfaces Claude Code · Cowork keynote</p>
+ <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">AJ</div>
+ <h4>Angela Jiang</h4>
+ <div class="speaker-role">Head of Product, Claude Platform</div>
+ <p class="speaker-quote">Managed Agents · keynote London</p>
+ <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">KL</div>
+ <h4>Katelyn Lesse</h4>
+ <div class="speaker-role">Head of Eng, Claude Platform</div>
+ <p class="speaker-quote">Infra agents · sandboxes · tunnels</p>
+ <a class="speaker-link" href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">London keynote →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">TS</div>
+ <h4>Thariq Shihipar</h4>
+ <div class="speaker-role">Claude Code team</div>
+ <p class="speaker-quote">The magic word for prompting is "interview me."</p>
+ <a class="speaker-link" href="https://howborisusesclaudecode.com/recap" target="_blank" rel="noopener">Workshop recap →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">JS</div>
+ <h4>Jarred Sumner</h4>
+ <div class="speaker-role">Creator of Bun, Anthropic</div>
+ <p class="speaker-quote">Robobun fait plus de commits sur Bun que moi.</p>
+ <a class="speaker-link" href="https://github.com/robobun" target="_blank" rel="noopener">github.com/robobun →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">NG</div>
+ <h4>Niklas Gustavsson</h4>
+ <div class="speaker-role">Chief Architect, Spotify</div>
+ <p class="speaker-quote">Coding is no longer the constraint.</p>
+ <a class="speaker-link" href="https://claude.com/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify" target="_blank" rel="noopener">Session officielle →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">FF</div>
+ <h4>Fiona Fung</h4>
+ <div class="speaker-role">Head of Eng, Claude Code (SF)</div>
+ <p class="speaker-quote">In technical debates, code wins.</p>
+ <a class="speaker-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">SF recap →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">DP</div>
+ <h4>Dianne Penn</h4>
+ <div class="speaker-role">Head of Product Research</div>
+ <p class="speaker-quote">Focus on automated evals and imaginative model usage.</p>
+ <a class="speaker-link" href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">SF recap →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">DH</div>
+ <h4>Daisy Hollman</h4>
+ <div class="speaker-role">Member of Technical Staff</div>
+ <p class="speaker-quote">Stuffing CLAUDE.md costs you on every turn.</p>
+ <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">BA</div>
+ <h4>Brad Abrams</h4>
+ <div class="speaker-role">Anthropic API team</div>
+ <p class="speaker-quote">Aim for &gt;80% prompt cache hit rate in prod.</p>
+ <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">MB</div>
+ <h4>Matt Bleifer</h4>
+ <div class="speaker-role">Talk: The Thinking Lever</div>
+ <p class="speaker-quote">Retry your failed use cases at every release.</p>
+ <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
+ </article>
+ <article class="speaker-card">
+ <div class="speaker-avatar">NZ</div>
+ <h4>Noah Zweben</h4>
+ <div class="speaker-role">Developer experience</div>
+ <p class="speaker-quote">PRs +300% en 3 mois, 1 engineer doc.</p>
+ <a class="speaker-link" href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Live blog →</a>
+ </article>
+ </div>
+ </section>
 
-  <!-- 11 Actions à embarquer -->
-  <section id="takeaways">
-    <div class="section-label">11 · Actions à embarquer <span class="reading-time">· board interactif</span></div>
-    <h2>Si tu builds avec Claude, voici par où commencer.</h2>
-    <p class="lead">Board d'actions concrètes synthétisées de la journée. Adapté pour un builder ou un founder solo. Coche au fur et à mesure — l'état est persisté en local sur ton navigateur.</p>
+ <!-- 11 Actions à embarquer -->
+ <section id="takeaways">
+ <div class="section-label">11 · Actions à embarquer <span class="reading-time">· board interactif</span></div>
+ <h2>Si tu builds avec Claude, voici par où commencer.</h2>
+ <p class="lead">Board d'actions concrètes synthétisées de la journée. Adapté pour un builder ou un founder solo. Coche au fur et à mesure · l'état est persisté en local sur ton navigateur.</p>
 
-    <div class="kanban">
-      <div class="kanban-col" data-prio="quick">
-        <header><h4>🟢 Quick wins · cette semaine</h4><span class="count">4</span></header>
-        <label class="kanban-task"><input type="checkbox" data-task="q1"><span>Activer <code>remoteControl: always</code> dans <code>~/.claude/settings.json</code></span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="q2"><span>Passer en <code>/tui fullscreen</code> dans le CLI</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="q3"><span>Activer Auto Prompt Caching et viser &gt;80% hit</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="q4"><span>Tester « interview me » sur le prochain prompt vague</span></label>
-      </div>
-      <div class="kanban-col" data-prio="short">
-        <header><h4>🟡 Court terme · ce mois</h4><span class="count">4</span></header>
-        <label class="kanban-task"><input type="checkbox" data-task="s1"><span>Démarrer une mini suite d'evals (5-10 cas réels)</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="s2"><span>Migrer les plans/specs Markdown → HTML pour Claude</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="s3"><span>Auditer ton <code>CLAUDE.md</code> — déplacer ce qui peut l'être en Skills/Hooks</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="s4"><span>Ajouter Programmatic Tool Calling sur les tools qui retournent &gt;1k tokens</span></label>
-      </div>
-      <div class="kanban-col" data-prio="mid">
-        <header><h4>🟠 Moyen terme · ce trimestre</h4><span class="count">3</span></header>
-        <label class="kanban-task"><input type="checkbox" data-task="m1"><span>Implémenter le pattern Planner / Generator / Evaluator sur une tâche longue</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="m2"><span>Tester Advisor Strategy (Sonnet executor + Opus advisor)</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="m3"><span>Mettre en place une Routine cron pour le travail asynchrone récurrent</span></label>
-      </div>
-      <div class="kanban-col" data-prio="long">
-        <header><h4>🔴 Plus loin · refonte</h4><span class="count">2</span></header>
-        <label class="kanban-task"><input type="checkbox" data-task="l1"><span>Repenser le produit en « AI-native » : qu'est-ce qu'un harness multi-agent débloque ?</span></label>
-        <label class="kanban-task"><input type="checkbox" data-task="l2"><span>Investir dans une <em>verification environment</em> propre à ton projet</span></label>
-      </div>
-    </div>
+ <div class="kanban">
+ <div class="kanban-col" data-prio="quick">
+ <header><h4>🟢 Quick wins · cette semaine</h4><span class="count">4</span></header>
+ <label class="kanban-task"><input type="checkbox" data-task="q1"><span>Activer <code>remoteControl: always</code> dans <code>~/.claude/settings.json</code></span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="q2"><span>Passer en <code>/tui fullscreen</code> dans le CLI</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="q3"><span>Activer Auto Prompt Caching et viser &gt;80% hit</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="q4"><span>Tester « interview me » sur le prochain prompt vague</span></label>
+ </div>
+ <div class="kanban-col" data-prio="short">
+ <header><h4>🟡 Court terme · ce mois</h4><span class="count">4</span></header>
+ <label class="kanban-task"><input type="checkbox" data-task="s1"><span>Démarrer une mini suite d'evals (5-10 cas réels)</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="s2"><span>Migrer les plans/specs Markdown → HTML pour Claude</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="s3"><span>Auditer ton <code>CLAUDE.md</code> · déplacer ce qui peut l'être en Skills/Hooks</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="s4"><span>Ajouter Programmatic Tool Calling sur les tools qui retournent &gt;1k tokens</span></label>
+ </div>
+ <div class="kanban-col" data-prio="mid">
+ <header><h4>🟠 Moyen terme · ce trimestre</h4><span class="count">3</span></header>
+ <label class="kanban-task"><input type="checkbox" data-task="m1"><span>Implémenter le pattern Planner / Generator / Evaluator sur une tâche longue</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="m2"><span>Tester Advisor Strategy (Sonnet executor + Opus advisor)</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="m3"><span>Mettre en place une Routine cron pour le travail asynchrone récurrent</span></label>
+ </div>
+ <div class="kanban-col" data-prio="long">
+ <header><h4>🔴 Plus loin · refonte</h4><span class="count">2</span></header>
+ <label class="kanban-task"><input type="checkbox" data-task="l1"><span>Repenser le produit en « AI-native » : qu'est-ce qu'un harness multi-agent débloque ?</span></label>
+ <label class="kanban-task"><input type="checkbox" data-task="l2"><span>Investir dans une <em>verification environment</em> propre à ton projet</span></label>
+ </div>
+ </div>
 
-    <h3>Questions ouvertes à approfondir</h3>
-    <ul>
-      <li>Combien de tokens ton <code>CLAUDE.md</code> coûte par tour, en pratique ? Quels morceaux pourraient devenir des Skills chargés à la demande ?</li>
-      <li>Sur quels workflows un agent autonome de type Robobun (issue → repro → test → fix → PR) aurait du sens dans ton produit ?</li>
-      <li>Auto Memory en local — comment isoler les apprentissages entre projets sans pollution croisée ?</li>
-      <li>Self-hosted sandboxes (Cloudflare, Vercel, Modal, Daytona) — quel intérêt si tu n'as pas de contrainte compliance ?</li>
-      <li>Si demain le modèle est 3× plus capable, que devient ton produit ? Es-tu prêt à le laisser faire plus en autonomie ?</li>
-    </ul>
-  </section>
+ <h3>Questions ouvertes à approfondir</h3>
+ <ul>
+ <li>Combien de tokens ton <code>CLAUDE.md</code> coûte par tour, en pratique ? Quels morceaux pourraient devenir des Skills chargés à la demande ?</li>
+ <li>Sur quels workflows un agent autonome de type Robobun (issue → repro → test → fix → PR) aurait du sens dans ton produit ?</li>
+ <li>Auto Memory en local · comment isoler les apprentissages entre projets sans pollution croisée ?</li>
+ <li>Self-hosted sandboxes (Cloudflare, Vercel, Modal, Daytona) · quel intérêt si tu n'as pas de contrainte compliance ?</li>
+ <li>Si demain le modèle est 3× plus capable, que devient ton produit ? Es-tu prêt à le laisser faire plus en autonomie ?</li>
+ </ul>
+ </section>
 
-  <!-- 12bis Contact -->
-  <section id="contact">
-    <div class="section-label">Contact</div>
-    <h2>Discutons.</h2>
-    <p class="lead">Si tu construis avec Claude, si tu as une question sur un workshop ou une feature, ou si tu veux échanger sur un cas d'usage — je suis joignable.</p>
+ <!-- 12bis Contact -->
+ <section id="contact">
+ <div class="section-label">Contact</div>
+ <h2>Discutons.</h2>
+ <p class="lead">Si tu construis avec Claude, si tu as une question sur un workshop ou une feature, ou si tu veux échanger sur un cas d'usage · je suis joignable.</p>
 
-    <div class="sagora-intro">
-      <a href="https://sagora.eu" target="_blank" rel="noopener" class="sagora-intro-logo" aria-label="SAGORA — site officiel">
-        <img src="assets/sagora-logo.svg" alt="Logo SAGORA" />
-      </a>
-      <div class="sagora-intro-content">
-        <div class="sagora-intro-label">À propos de SAGORA</div>
-        <p>
-          <strong>SAGORA</strong> accompagne les dirigeants, CFO et équipes financières à monter en compétence sur la finance d'entreprise et à <strong>intégrer l'IA dans leur fonction finance</strong>. On combine formations sur-mesure, conseil opérationnel et outils analytiques.
-          Si l'un de ces angles résonne — ou si tu veux juste échanger sur un cas d'usage Claude — ce formulaire est le bon point d'entrée. Plus d'infos sur <a href="https://sagora.eu" target="_blank" rel="noopener">sagora.eu</a>.
-        </p>
-      </div>
-    </div>
+ <div class="sagora-intro">
+ <a href="https://sagora.eu" target="_blank" rel="noopener" class="sagora-intro-logo" aria-label="SAGORA · site officiel">
+ <img src="assets/sagora-logo.svg" alt="Logo SAGORA" />
+ </a>
+ <div class="sagora-intro-content">
+ <div class="sagora-intro-label">À propos de SAGORA</div>
+ <p>
+ <strong>SAGORA</strong> accompagne les dirigeants, CFO et équipes financières à monter en compétence sur la finance d'entreprise et à <strong>intégrer l'IA dans leur fonction finance</strong>. On combine formations sur-mesure, conseil opérationnel et outils analytiques.
+ Si l'un de ces angles résonne · ou si tu veux juste échanger sur un cas d'usage Claude · ce formulaire est le bon point d'entrée. Plus d'infos sur <a href="https://sagora.eu" target="_blank" rel="noopener">sagora.eu</a>.
+ </p>
+ </div>
+ </div>
 
-    <div class="contact-grid">
-      <div class="contact-card">
-        <div class="author-bio">
-          <div class="author-avatar"><img src="assets/robin-hero.jpg" alt="Robin Detant" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" /></div>
-          <div>
-            <h4>Robin Detant</h4>
-            <div class="role">Business Developer &amp; AI Builder · SAGORA</div>
-          </div>
-        </div>
-        <p style="font-size:14px;color:var(--text-muted);">J'ai compilé ces notes pour mon usage et je les publie ici parce que d'autres builders pourraient en tirer quelque chose. Le format est fait pour être parcouru sur 10 minutes ou exploré sur une heure, au choix.</p>
-        <div class="contact-info">
-          <div class="contact-info-item"><span class="lab">Email</span><a href="mailto:robin.detant@sagora.eu">robin.detant@sagora.eu</a></div>
-          <div class="contact-info-item"><span class="lab">SAGORA</span><a href="https://sagora.eu" target="_blank" rel="noopener">sagora.eu</a></div>
-          <div class="contact-info-item"><span class="lab">LinkedIn</span><a href="https://www.linkedin.com/in/robindetant" target="_blank" rel="noopener">linkedin.com/in/robindetant</a></div>
-        </div>
-      </div>
+ <div class="contact-grid">
+ <div class="contact-card">
+ <div class="author-bio">
+ <div class="author-avatar"><img src="assets/robin-hero.jpg" alt="Robin Detant" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" /></div>
+ <div>
+ <h4>Robin Detant</h4>
+ <div class="role">Business Developer &amp; AI Builder · SAGORA</div>
+ </div>
+ </div>
+ <p style="font-size:14px;color:var(--text-muted);">J'ai compilé ces notes pour mon usage et je les publie ici parce que d'autres builders pourraient en tirer quelque chose. Le format est fait pour être parcouru sur 10 minutes ou exploré sur une heure, au choix.</p>
+ <div class="contact-info">
+ <div class="contact-info-item"><span class="lab">Email</span><a href="mailto:robin.detant@sagora.eu">robin.detant@sagora.eu</a></div>
+ <div class="contact-info-item"><span class="lab">SAGORA</span><a href="https://sagora.eu" target="_blank" rel="noopener">sagora.eu</a></div>
+ <div class="contact-info-item"><span class="lab">LinkedIn</span><a href="https://www.linkedin.com/in/robindetant" target="_blank" rel="noopener">linkedin.com/in/robindetant</a></div>
+ </div>
+ </div>
 
-      <div class="contact-card">
-        <h3 style="margin-top:0;font-size:20px;">Écris-moi</h3>
-        <p style="font-size:13px;color:var(--text-muted);">Réponse directe sur l'email que tu indiques. Sous 24-48h ouvrées. Si tu préfères, écris-moi à <a href="mailto:robin.detant@sagora.eu">robin.detant@sagora.eu</a>.</p>
-        <form class="contact-form" id="contactForm" novalidate>
-          <div>
-            <label for="cfName">Ton nom</label>
-            <input type="text" id="cfName" required autocomplete="name" />
-          </div>
-          <div>
-            <label for="cfEmail">Ton email</label>
-            <input type="email" id="cfEmail" required autocomplete="email" />
-          </div>
-          <div>
-            <label for="cfTopic">Sujet</label>
-            <select id="cfTopic">
-              <option value="Question sur le recap CwC London">Question sur le recap CwC London</option>
-              <option value="CFO / Direction financière : intégrer l'IA dans ma fonction">CFO / Direction financière : intégrer l'IA dans ma fonction</option>
-              <option value="Dirigeant : audit IA et roadmap pour mon entreprise">Dirigeant : audit IA et roadmap pour mon entreprise</option>
-              <option value="Équipe finance : agents Claude pour mes analyses">Équipe finance : agents Claude pour mes analyses</option>
-              <option value="Formation finance + IA pour mon équipe">Formation finance + IA pour mon équipe</option>
-              <option value="Discussion sur un cas d'usage Claude">Discussion sur un cas d'usage Claude</option>
-              <option value="Échange founder / builder / dev AI">Échange founder / builder / dev AI</option>
-              <option value="Autre">Autre</option>
-            </select>
-          </div>
-          <div>
-            <label for="cfMessage">Ton message</label>
-            <textarea id="cfMessage" required placeholder="Bonjour Robin,&#10;&#10;Je t'ai lu sur le recap CwC London. J'aurais voulu te demander…"></textarea>
-          </div>
-          <input type="text" id="cfHp" name="company-website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
-          <button type="submit" id="cfSubmit">Envoyer →</button>
-          <div id="cfStatus" class="cf-status" role="status" aria-live="polite"></div>
-          <p class="hint">Le message m'arrive directement par email. Réponse sous 24-48h ouvrées.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+ <div class="contact-card">
+ <h3 style="margin-top:0;font-size:20px;">Écris-moi</h3>
+ <p style="font-size:13px;color:var(--text-muted);">Réponse directe sur l'email que tu indiques. Sous 24-48h ouvrées. Si tu préfères, écris-moi à <a href="mailto:robin.detant@sagora.eu">robin.detant@sagora.eu</a>.</p>
+ <form class="contact-form" id="contactForm" novalidate>
+ <div>
+ <label for="cfName">Ton nom</label>
+ <input type="text" id="cfName" required autocomplete="name" />
+ </div>
+ <div>
+ <label for="cfEmail">Ton email</label>
+ <input type="email" id="cfEmail" required autocomplete="email" />
+ </div>
+ <div>
+ <label for="cfTopic">Sujet</label>
+ <select id="cfTopic">
+ <option value="Question sur le recap CwC London">Question sur le recap CwC London</option>
+ <option value="CFO / Direction financière : intégrer l'IA dans ma fonction">CFO / Direction financière : intégrer l'IA dans ma fonction</option>
+ <option value="Dirigeant : audit IA et roadmap pour mon entreprise">Dirigeant : audit IA et roadmap pour mon entreprise</option>
+ <option value="Équipe finance : agents Claude pour mes analyses">Équipe finance : agents Claude pour mes analyses</option>
+ <option value="Formation finance + IA pour mon équipe">Formation finance + IA pour mon équipe</option>
+ <option value="Discussion sur un cas d'usage Claude">Discussion sur un cas d'usage Claude</option>
+ <option value="Échange founder / builder / dev AI">Échange founder / builder / dev AI</option>
+ <option value="Autre">Autre</option>
+ </select>
+ </div>
+ <div>
+ <label for="cfMessage">Ton message</label>
+ <textarea id="cfMessage" required placeholder="Bonjour Robin,&#10;&#10;Je t'ai lu sur le recap CwC London. J'aurais voulu te demander…"></textarea>
+ </div>
+ <input type="text" id="cfHp" name="company-website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
+ <button type="submit" id="cfSubmit">Envoyer →</button>
+ <div id="cfStatus" class="cf-status" role="status" aria-live="polite"></div>
+ <p class="hint">Le message m'arrive directement par email. Réponse sous 24-48h ouvrées.</p>
+ </form>
+ </div>
+ </div>
+ </section>
 
-  <!-- 12 Sources -->
-  <section id="sources" class="sources-cat">
-    <div class="section-label">12 · Sources</div>
-    <h2>Toutes les références.</h2>
+ <!-- 12 Sources -->
+ <section id="sources" class="sources-cat">
+ <div class="section-label">12 · Sources</div>
+ <h2>Toutes les références.</h2>
 
-    <h4>Pages officielles événement</h4>
-    <ul>
-      <li><a href="https://claude.com/code-with-claude/london-extended" target="_blank" rel="noopener">CwC Extended London (20 mai 2026)</a></li>
-      <li><a href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">CwC London Day 1 (19 mai 2026)</a></li>
-      <li><a href="https://claude.com/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify" target="_blank" rel="noopener">Spotify session officielle</a></li>
-      <li><a href="https://claude.com/code-with-claude/session/ldn-whats-new-in-claude-code" target="_blank" rel="noopener">What's new in Claude Code (session London)</a></li>
-    </ul>
+ <h4>Pages officielles événement</h4>
+ <ul>
+ <li><a href="https://claude.com/code-with-claude/london-extended" target="_blank" rel="noopener">CwC Extended London (20 mai 2026)</a></li>
+ <li><a href="https://claude.com/code-with-claude/london" target="_blank" rel="noopener">CwC London Day 1 (19 mai 2026)</a></li>
+ <li><a href="https://claude.com/code-with-claude/session/ldn-coding-is-no-longer-the-constraint-scaling-devex-to-teams-and-agents-at-spotify" target="_blank" rel="noopener">Spotify session officielle</a></li>
+ <li><a href="https://claude.com/code-with-claude/session/ldn-whats-new-in-claude-code" target="_blank" rel="noopener">What's new in Claude Code (session London)</a></li>
+ </ul>
 
-    <h4>Vidéos officielles Anthropic (chaîne <a href="https://www.youtube.com/@claude" target="_blank" rel="noopener">@claude</a>)</h4>
-    <ul>
-      <li><a href="https://www.youtube.com/watch?v=6amLO7I9xdg" target="_blank" rel="noopener">CwC London 2026 — Opening Keynote (Boris, Cat, Angela, Katelyn)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=AgQ4cwL5eOM" target="_blank" rel="noopener">CwC 2026 | London — Main stage stream complet</a></li>
-      <li><a href="https://www.youtube.com/watch?v=DlTCu_pNDHE" target="_blank" rel="noopener">Live coding — Boris Cherny &amp; Jarred Sumner</a></li>
-      <li><a href="https://www.youtube.com/watch?v=5CjdS_9xI9E" target="_blank" rel="noopener">The Thinking Lever — Matt Bleifer (Day 1)</a></li>
-      <li><a href="https://www.youtube.com/watch?v=efRIrLXoOVA" target="_blank" rel="noopener">Building Agent Harnesses for Large Codebases</a></li>
-      <li><a href="https://www.youtube.com/watch?v=PplmzlgE0kg" target="_blank" rel="noopener">Cat Wu — How Anthropic's product team moves faster than anyone else</a></li>
-      <li><a href="https://www.youtube.com/watch?v=SlGRN8jh2RI" target="_blank" rel="noopener">Boris Cherny — Why Coding Is Solved, and What Comes Next</a></li>
-      <li><a href="https://www.youtube.com/watch?v=wjvESxKgqaQ" target="_blank" rel="noopener">CwC 2026 — Opening Keynote SF (référence Day 1)</a></li>
-      <li><a href="https://www.youtube.com/playlist?list=PLmWCw1CzcFim2obQ-w3ohbULOfwp5lApR" target="_blank" rel="noopener">Playlist complète CwC 2026 San Francisco</a></li>
-    </ul>
+ <h4>Vidéos officielles Anthropic (chaîne <a href="https://www.youtube.com/@claude" target="_blank" rel="noopener">@claude</a>)</h4>
+ <ul>
+ <li><a href="https://www.youtube.com/watch?v=6amLO7I9xdg" target="_blank" rel="noopener">CwC London 2026 · Opening Keynote (Boris, Cat, Angela, Katelyn)</a></li>
+ <li><a href="https://www.youtube.com/watch?v=AgQ4cwL5eOM" target="_blank" rel="noopener">CwC 2026 | London · Main stage stream complet</a></li>
+ <li><a href="https://www.youtube.com/watch?v=DlTCu_pNDHE" target="_blank" rel="noopener">Live coding · Boris Cherny &amp; Jarred Sumner</a></li>
+ <li><a href="https://www.youtube.com/watch?v=5CjdS_9xI9E" target="_blank" rel="noopener">The Thinking Lever · Matt Bleifer (Day 1)</a></li>
+ <li><a href="https://www.youtube.com/watch?v=efRIrLXoOVA" target="_blank" rel="noopener">Building Agent Harnesses for Large Codebases</a></li>
+ <li><a href="https://www.youtube.com/watch?v=PplmzlgE0kg" target="_blank" rel="noopener">Cat Wu · How Anthropic's product team moves faster than anyone else</a></li>
+ <li><a href="https://www.youtube.com/watch?v=SlGRN8jh2RI" target="_blank" rel="noopener">Boris Cherny · Why Coding Is Solved, and What Comes Next</a></li>
+ <li><a href="https://www.youtube.com/watch?v=wjvESxKgqaQ" target="_blank" rel="noopener">CwC 2026 · Opening Keynote SF (référence Day 1)</a></li>
+ <li><a href="https://www.youtube.com/playlist?list=PLmWCw1CzcFim2obQ-w3ohbULOfwp5lApR" target="_blank" rel="noopener">Playlist complète CwC 2026 San Francisco</a></li>
+ </ul>
 
-    <h4>Anthropic blog & docs</h4>
-    <ul>
-      <li><a href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Building on the AI exponential (recap SF officiel)</a></li>
-      <li><a href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">New in Claude Managed Agents (dreaming, outcomes, orchestration)</a></li>
-      <li><a href="https://claude.com/blog/introducing-routines-in-claude-code" target="_blank" rel="noopener">Introducing Routines in Claude Code</a></li>
-      <li><a href="https://code.claude.com/docs/en/routines" target="_blank" rel="noopener">Claude Code Docs · Routines</a></li>
-      <li><a href="https://platform.claude.com/docs/en/managed-agents/overview" target="_blank" rel="noopener">Claude Platform Docs · Managed Agents</a></li>
-      <li><a href="https://www.anthropic.com/engineering/harness-design-long-running-apps" target="_blank" rel="noopener">Engineering · Harness design for long-running apps</a></li>
-      <li><a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">Higher limits (deal SpaceX Colossus)</a></li>
-      <li><a href="https://www.anthropic.com/news/healthcare-life-sciences" target="_blank" rel="noopener">Anthropic · Claude for Healthcare</a></li>
-    </ul>
+ <h4>Anthropic blog & docs</h4>
+ <ul>
+ <li><a href="https://claude.com/blog/code-w-claude-sf-2026-sf" target="_blank" rel="noopener">Building on the AI exponential (recap SF officiel)</a></li>
+ <li><a href="https://claude.com/blog/new-in-claude-managed-agents" target="_blank" rel="noopener">New in Claude Managed Agents (dreaming, outcomes, orchestration)</a></li>
+ <li><a href="https://claude.com/blog/introducing-routines-in-claude-code" target="_blank" rel="noopener">Introducing Routines in Claude Code</a></li>
+ <li><a href="https://code.claude.com/docs/en/routines" target="_blank" rel="noopener">Claude Code Docs · Routines</a></li>
+ <li><a href="https://platform.claude.com/docs/en/managed-agents/overview" target="_blank" rel="noopener">Claude Platform Docs · Managed Agents</a></li>
+ <li><a href="https://www.anthropic.com/engineering/harness-design-long-running-apps" target="_blank" rel="noopener">Engineering · Harness design for long-running apps</a></li>
+ <li><a href="https://www.anthropic.com/news/higher-limits-spacex" target="_blank" rel="noopener">Higher limits (deal SpaceX Colossus)</a></li>
+ <li><a href="https://www.anthropic.com/news/healthcare-life-sciences" target="_blank" rel="noopener">Anthropic · Claude for Healthcare</a></li>
+ </ul>
 
-    <h4>Customer engineering blogs</h4>
-    <ul>
-      <li><a href="https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1" target="_blank" rel="noopener">Spotify · Honk Part 1 (1,500+ PRs)</a></li>
-      <li><a href="https://engineering.atspotify.com/2025/11/context-engineering-background-coding-agents-part-2" target="_blank" rel="noopener">Spotify · Honk Part 2 (context engineering)</a></li>
-      <li><a href="https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4" target="_blank" rel="noopener">Spotify · Honk Part 4 (dataset migrations)</a></li>
-      <li><a href="https://engineering.atspotify.com/2026/4/anthropic-agentic-development" target="_blank" rel="noopener">Spotify x Anthropic Live</a></li>
-    </ul>
+ <h4>Customer engineering blogs</h4>
+ <ul>
+ <li><a href="https://engineering.atspotify.com/2025/11/spotifys-background-coding-agent-part-1" target="_blank" rel="noopener">Spotify · Honk Part 1 (1,500+ PRs)</a></li>
+ <li><a href="https://engineering.atspotify.com/2025/11/context-engineering-background-coding-agents-part-2" target="_blank" rel="noopener">Spotify · Honk Part 2 (context engineering)</a></li>
+ <li><a href="https://engineering.atspotify.com/2026/4/background-coding-agents-dataset-migrations-honk-part-4" target="_blank" rel="noopener">Spotify · Honk Part 4 (dataset migrations)</a></li>
+ <li><a href="https://engineering.atspotify.com/2026/4/anthropic-agentic-development" target="_blank" rel="noopener">Spotify x Anthropic Live</a></li>
+ </ul>
 
-    <h4>Recaps indépendants</h4>
-    <ul>
-      <li><a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Simon Willison · Live blog Code w/ Claude 2026 SF</a></li>
-      <li><a href="https://chrisebert.net/notes-from-code-with-claude-2026/" target="_blank" rel="noopener">Chris Ebert · Notes from CwC 2026</a></li>
-      <li><a href="https://inaiwetrust.com/p/16-claude-features-that-change-how-you-build-ai" target="_blank" rel="noopener">Alex Velinov · 16 Claude Features That Change How You Build AI</a></li>
-      <li><a href="https://www.dotzlaw.com/insights/anthropic-2026-code-with-claude/" target="_blank" rel="noopener">Dotzlaw · Doubled limits & infinite context</a></li>
-      <li><a href="https://chatforest.com/guides/claude-managed-agents-dreaming-outcomes-multiagent/" target="_blank" rel="noopener">ChatForest · Dreaming, Outcomes, Multiagent Orchestration</a></li>
-      <li><a href="https://github.com/anthropics/cwc-long-running-agents" target="_blank" rel="noopener">GitHub · anthropics/cwc-long-running-agents</a></li>
-      <li><a href="https://howborisusesclaudecode.com/recap" target="_blank" rel="noopener">Thariq Shihipar workshop recap</a></li>
-    </ul>
-  </section>
+ <h4>Recaps indépendants</h4>
+ <ul>
+ <li><a href="https://simonwillison.net/2026/May/6/code-w-claude-2026/" target="_blank" rel="noopener">Simon Willison · Live blog Code w/ Claude 2026 SF</a></li>
+ <li><a href="https://chrisebert.net/notes-from-code-with-claude-2026/" target="_blank" rel="noopener">Chris Ebert · Notes from CwC 2026</a></li>
+ <li><a href="https://inaiwetrust.com/p/16-claude-features-that-change-how-you-build-ai" target="_blank" rel="noopener">Alex Velinov · 16 Claude Features That Change How You Build AI</a></li>
+ <li><a href="https://www.dotzlaw.com/insights/anthropic-2026-code-with-claude/" target="_blank" rel="noopener">Dotzlaw · Doubled limits & infinite context</a></li>
+ <li><a href="https://chatforest.com/guides/claude-managed-agents-dreaming-outcomes-multiagent/" target="_blank" rel="noopener">ChatForest · Dreaming, Outcomes, Multiagent Orchestration</a></li>
+ <li><a href="https://github.com/anthropics/cwc-long-running-agents" target="_blank" rel="noopener">GitHub · anthropics/cwc-long-running-agents</a></li>
+ <li><a href="https://howborisusesclaudecode.com/recap" target="_blank" rel="noopener">Thariq Shihipar workshop recap</a></li>
+ </ul>
+ </section>
 
 </main>
 </div>
 
 <!-- Feature modal -->
 <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-  <div class="modal">
-    <div class="modal-header">
-      <div>
-        <h3 id="modalTitle">Titre feature</h3>
-        <div class="modal-tags" id="modalTags"></div>
-      </div>
-      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
-    </div>
-    <div class="modal-body" id="modalBody"></div>
-  </div>
+ <div class="modal">
+ <div class="modal-header">
+ <div>
+ <h3 id="modalTitle">Titre feature</h3>
+ <div class="modal-tags" id="modalTags"></div>
+ </div>
+ <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+ </div>
+ <div class="modal-body" id="modalBody"></div>
+ </div>
 </div>
 
 <!-- Command palette -->
 <div class="cmdk-backdrop" id="cmdkBackdrop" role="dialog" aria-modal="true" aria-label="Palette de commandes">
-  <div class="cmdk">
-    <input type="search" id="cmdkInput" placeholder="Rechercher une feature, un speaker, une section…" aria-label="Recherche" />
-    <div class="cmdk-results" id="cmdkResults">
-      <div class="cmdk-group">Sections</div>
-      <div class="cmdk-item" data-target="#tldr">TL;DR <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#day1-day2">Day 1 ↔ Day 2 <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#features">16 features <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#customers">Customer case studies <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#founder">Founder stage <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#builder">Builder stage <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#workshops">Workshops Applied AI <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#themes">Thèmes transverses <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#glossary">Glossaire <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#speakers">Speakers <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#takeaways">Actions à embarquer <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#sources">Sources <span class="cmdk-type">section</span></div>
-      <div class="cmdk-item" data-target="#contact">Contact <span class="cmdk-type">section</span></div>
+ <div class="cmdk">
+ <input type="search" id="cmdkInput" placeholder="Rechercher une feature, un speaker, une section…" aria-label="Recherche" />
+ <div class="cmdk-results" id="cmdkResults">
+ <div class="cmdk-group">Sections</div>
+ <div class="cmdk-item" data-target="#tldr">TL;DR <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#day1-day2">Day 1 ↔ Day 2 <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#features">16 features <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#customers">Customer case studies <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#founder">Founder stage <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#builder">Builder stage <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#workshops">Workshops Applied AI <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#themes">Thèmes transverses <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#glossary">Glossaire <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#speakers">Speakers <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#takeaways">Actions à embarquer <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#sources">Sources <span class="cmdk-type">section</span></div>
+ <div class="cmdk-item" data-target="#contact">Contact <span class="cmdk-type">section</span></div>
 
-      <div class="cmdk-group">Features · Autonomy</div>
-      <div class="cmdk-item" data-target="#features" data-feature="auto-mode">Auto Mode <span class="cmdk-type">feature · autonomy</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="routines">Routines <span class="cmdk-type">feature · autonomy</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="ci-autofix">CI Autofix <span class="cmdk-type">feature · autonomy</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="work-trees">Work Trees <span class="cmdk-type">feature · autonomy</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="auto-memory">Auto Memory <span class="cmdk-type">feature · autonomy</span></div>
+ <div class="cmdk-group">Features · Autonomy</div>
+ <div class="cmdk-item" data-target="#features" data-feature="auto-mode">Auto Mode <span class="cmdk-type">feature · autonomy</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="routines">Routines <span class="cmdk-type">feature · autonomy</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="ci-autofix">CI Autofix <span class="cmdk-type">feature · autonomy</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="work-trees">Work Trees <span class="cmdk-type">feature · autonomy</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="auto-memory">Auto Memory <span class="cmdk-type">feature · autonomy</span></div>
 
-      <div class="cmdk-group">Features · Visibility</div>
-      <div class="cmdk-item" data-target="#features" data-feature="agent-view">Agent View (CLI) <span class="cmdk-type">feature · visibility</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="remote-control">Remote Control <span class="cmdk-type">feature · visibility</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="desktop">Desktop App refresh <span class="cmdk-type">feature · visibility</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="tui">Flicker-Free TUI <span class="cmdk-type">feature · visibility</span></div>
+ <div class="cmdk-group">Features · Visibility</div>
+ <div class="cmdk-item" data-target="#features" data-feature="agent-view">Agent View (CLI) <span class="cmdk-type">feature · visibility</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="remote-control">Remote Control <span class="cmdk-type">feature · visibility</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="desktop">Desktop App refresh <span class="cmdk-type">feature · visibility</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="tui">Flicker-Free TUI <span class="cmdk-type">feature · visibility</span></div>
 
-      <div class="cmdk-group">Features · Infrastructure</div>
-      <div class="cmdk-item" data-target="#features" data-feature="sandboxes">Self-Hosted Sandboxes <span class="cmdk-type">feature · infra</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="mcp-tunnels">MCP Tunnels <span class="cmdk-type">feature · preview</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="security">Claude Security <span class="cmdk-type">feature · infra</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="advisor">Advisor Strategy <span class="cmdk-type">feature · infra</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="tool-search">Tool Search <span class="cmdk-type">feature · infra</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="prog-tool">Programmatic Tool Calling <span class="cmdk-type">feature · infra</span></div>
-      <div class="cmdk-item" data-target="#features" data-feature="cache">Auto Prompt Caching <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-group">Features · Infrastructure</div>
+ <div class="cmdk-item" data-target="#features" data-feature="sandboxes">Self-Hosted Sandboxes <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="mcp-tunnels">MCP Tunnels <span class="cmdk-type">feature · preview</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="security">Claude Security <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="advisor">Advisor Strategy <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="tool-search">Tool Search <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="prog-tool">Programmatic Tool Calling <span class="cmdk-type">feature · infra</span></div>
+ <div class="cmdk-item" data-target="#features" data-feature="cache">Auto Prompt Caching <span class="cmdk-type">feature · infra</span></div>
 
-      <div class="cmdk-group">Speakers</div>
-      <div class="cmdk-item" data-target="#speakers">Boris Cherny <span class="cmdk-type">speaker · Claude Code</span></div>
-      <div class="cmdk-item" data-target="#speakers">Cat Wu <span class="cmdk-type">speaker · Cowork</span></div>
-      <div class="cmdk-item" data-target="#speakers">Angela Jiang <span class="cmdk-type">speaker · Platform</span></div>
-      <div class="cmdk-item" data-target="#speakers">Katelyn Lesse <span class="cmdk-type">speaker · Platform Eng</span></div>
-      <div class="cmdk-item" data-target="#speakers">Thariq Shihipar <span class="cmdk-type">speaker · Claude Code</span></div>
-      <div class="cmdk-item" data-target="#speakers">Jarred Sumner <span class="cmdk-type">speaker · Bun</span></div>
-      <div class="cmdk-item" data-target="#speakers">Niklas Gustavsson <span class="cmdk-type">speaker · Spotify</span></div>
-      <div class="cmdk-item" data-target="#speakers">Fiona Fung <span class="cmdk-type">speaker · Claude Code</span></div>
-      <div class="cmdk-item" data-target="#speakers">Dianne Penn <span class="cmdk-type">speaker · Research</span></div>
-      <div class="cmdk-item" data-target="#speakers">Daisy Hollman <span class="cmdk-type">speaker · MTS</span></div>
-      <div class="cmdk-item" data-target="#speakers">Brad Abrams <span class="cmdk-type">speaker · API</span></div>
-      <div class="cmdk-item" data-target="#speakers">Matt Bleifer <span class="cmdk-type">speaker · Thinking Lever</span></div>
-      <div class="cmdk-item" data-target="#speakers">Noah Zweben <span class="cmdk-type">speaker · DevEx</span></div>
+ <div class="cmdk-group">Speakers</div>
+ <div class="cmdk-item" data-target="#speakers">Boris Cherny <span class="cmdk-type">speaker · Claude Code</span></div>
+ <div class="cmdk-item" data-target="#speakers">Cat Wu <span class="cmdk-type">speaker · Cowork</span></div>
+ <div class="cmdk-item" data-target="#speakers">Angela Jiang <span class="cmdk-type">speaker · Platform</span></div>
+ <div class="cmdk-item" data-target="#speakers">Katelyn Lesse <span class="cmdk-type">speaker · Platform Eng</span></div>
+ <div class="cmdk-item" data-target="#speakers">Thariq Shihipar <span class="cmdk-type">speaker · Claude Code</span></div>
+ <div class="cmdk-item" data-target="#speakers">Jarred Sumner <span class="cmdk-type">speaker · Bun</span></div>
+ <div class="cmdk-item" data-target="#speakers">Niklas Gustavsson <span class="cmdk-type">speaker · Spotify</span></div>
+ <div class="cmdk-item" data-target="#speakers">Fiona Fung <span class="cmdk-type">speaker · Claude Code</span></div>
+ <div class="cmdk-item" data-target="#speakers">Dianne Penn <span class="cmdk-type">speaker · Research</span></div>
+ <div class="cmdk-item" data-target="#speakers">Daisy Hollman <span class="cmdk-type">speaker · MTS</span></div>
+ <div class="cmdk-item" data-target="#speakers">Brad Abrams <span class="cmdk-type">speaker · API</span></div>
+ <div class="cmdk-item" data-target="#speakers">Matt Bleifer <span class="cmdk-type">speaker · Thinking Lever</span></div>
+ <div class="cmdk-item" data-target="#speakers">Noah Zweben <span class="cmdk-type">speaker · DevEx</span></div>
 
-      <div class="cmdk-group">Customers</div>
-      <div class="cmdk-item" data-target="#customers">Spotify · Honk +60% PRs <span class="cmdk-type">customer</span></div>
-      <div class="cmdk-item" data-target="#customers">Harvey · Dreaming 6× <span class="cmdk-type">customer</span></div>
-      <div class="cmdk-item" data-target="#customers">Lovable · −10% tokens <span class="cmdk-type">customer</span></div>
-      <div class="cmdk-item" data-target="#customers">Bun · Robobun <span class="cmdk-type">customer</span></div>
-      <div class="cmdk-item" data-target="#customers">Eve Legal / Legora <span class="cmdk-type">customer</span></div>
+ <div class="cmdk-group">Customers</div>
+ <div class="cmdk-item" data-target="#customers">Spotify · Honk +60% PRs <span class="cmdk-type">customer</span></div>
+ <div class="cmdk-item" data-target="#customers">Harvey · Dreaming 6× <span class="cmdk-type">customer</span></div>
+ <div class="cmdk-item" data-target="#customers">Lovable · −10% tokens <span class="cmdk-type">customer</span></div>
+ <div class="cmdk-item" data-target="#customers">Bun · Robobun <span class="cmdk-type">customer</span></div>
+ <div class="cmdk-item" data-target="#customers">Eve Legal / Legora <span class="cmdk-type">customer</span></div>
 
-      <div class="cmdk-group">Glossaire</div>
-      <div class="cmdk-item" data-target="#glossary">Routines <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Dreaming <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Outcomes <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">MCP <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Advisor Strategy <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Harness <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Tool Search <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Auto Memory <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Eval <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Grader <span class="cmdk-type">term</span></div>
-      <div class="cmdk-item" data-target="#glossary">Subagent <span class="cmdk-type">term</span></div>
-    </div>
-  </div>
+ <div class="cmdk-group">Glossaire</div>
+ <div class="cmdk-item" data-target="#glossary">Routines <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Dreaming <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Outcomes <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">MCP <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Advisor Strategy <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Harness <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Tool Search <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Auto Memory <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Eval <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Grader <span class="cmdk-type">term</span></div>
+ <div class="cmdk-item" data-target="#glossary">Subagent <span class="cmdk-type">term</span></div>
+ </div>
+ </div>
 </div>
 
 <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">↑</button>
 
 <footer>
-  <div style="max-width: 720px; margin: 0 auto; line-height: 1.7;">
-    Recap interactif de <strong style="color:var(--text-muted);">Code w/ Claude Extended London</strong> · 20 mai 2026<br/>
-    Notes personnelles compilées et partagées publiquement par <a href="mailto:robin.detant@sagora.eu">Robin Detant</a> (<a href="https://sagora.eu" target="_blank" rel="noopener">SAGORA</a>) — <a href="https://www.linkedin.com/in/robindetant" target="_blank" rel="noopener">LinkedIn</a>.<br/>
-    <span style="color:var(--text-dim);font-size:12px;">Aucun lien officiel avec Anthropic. Style visuel inspiré des conventions Claude / Anthropic. Toutes les citations sont attribuées à leurs auteurs.</span>
-  </div>
+ <div style="max-width: 720px; margin: 0 auto; line-height: 1.7;">
+ Recap interactif de <strong style="color:var(--text-muted);">Code w/ Claude Extended London</strong> · 20 mai 2026<br/>
+ Notes personnelles compilées et partagées publiquement par <a href="mailto:robin.detant@sagora.eu">Robin Detant</a> (<a href="https://sagora.eu" target="_blank" rel="noopener">SAGORA</a>) · <a href="https://www.linkedin.com/in/robindetant" target="_blank" rel="noopener">LinkedIn</a>.<br/>
+ <span style="color:var(--text-dim);font-size:12px;">Aucun lien officiel avec Anthropic. Style visuel inspiré des conventions Claude / Anthropic. Toutes les citations sont attribuées à leurs auteurs.</span>
+ </div>
 </footer>
 
 <script src="script.js" defer></script>
