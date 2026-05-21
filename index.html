@@ -1123,13 +1123,21 @@ A good response MUST NOT:
     <h2>Discutons.</h2>
     <p class="lead">Si tu construis avec Claude, si tu as une question sur un workshop ou une feature, ou si tu veux échanger sur un cas d'usage — je suis joignable.</p>
 
+    <div class="sagora-intro">
+      <div class="sagora-intro-label">À propos de SAGORA</div>
+      <p>
+        <strong>SAGORA</strong> accompagne les dirigeants, CFO et équipes financières à monter en compétence sur la finance d'entreprise et à <strong>intégrer l'IA dans leur fonction finance</strong>. On combine formations sur-mesure, conseil opérationnel et outils analytiques.
+        Si l'un de ces angles résonne — ou si tu veux juste échanger sur un cas d'usage Claude — ce formulaire est le bon point d'entrée. Plus d'infos sur <a href="https://sagora.eu" target="_blank" rel="noopener">sagora.eu</a>.
+      </p>
+    </div>
+
     <div class="contact-grid">
       <div class="contact-card">
         <div class="author-bio">
           <div class="author-avatar"><img src="assets/robin-hero.jpg" alt="Robin Detant" style="width:100%;height:100%;object-fit:cover;border-radius:50%;display:block;" /></div>
           <div>
             <h4>Robin Detant</h4>
-            <div class="role">Founder · SAGORA</div>
+            <div class="role">Business Developer &amp; AI Builder · SAGORA</div>
           </div>
         </div>
         <p style="font-size:14px;color:var(--text-muted);">J'ai compilé ces notes pour mon usage et je les publie ici parce que d'autres builders pourraient en tirer quelque chose. Le format est fait pour être parcouru sur 10 minutes ou exploré sur une heure, au choix.</p>
@@ -1156,8 +1164,12 @@ A good response MUST NOT:
             <label for="cfTopic">Sujet</label>
             <select id="cfTopic">
               <option value="Question sur le recap CwC London">Question sur le recap CwC London</option>
+              <option value="CFO / Direction financière : intégrer l'IA dans ma fonction">CFO / Direction financière : intégrer l'IA dans ma fonction</option>
+              <option value="Dirigeant : audit IA et roadmap pour mon entreprise">Dirigeant : audit IA et roadmap pour mon entreprise</option>
+              <option value="Équipe finance : agents Claude pour mes analyses">Équipe finance : agents Claude pour mes analyses</option>
+              <option value="Formation finance + IA pour mon équipe">Formation finance + IA pour mon équipe</option>
               <option value="Discussion sur un cas d'usage Claude">Discussion sur un cas d'usage Claude</option>
-              <option value="Échange founder / builder">Échange founder / builder</option>
+              <option value="Échange founder / builder / dev AI">Échange founder / builder / dev AI</option>
               <option value="Autre">Autre</option>
             </select>
           </div>
@@ -1165,8 +1177,10 @@ A good response MUST NOT:
             <label for="cfMessage">Ton message</label>
             <textarea id="cfMessage" required placeholder="Bonjour Robin,&#10;&#10;Je t'ai lu sur le recap CwC London. J'aurais voulu te demander…"></textarea>
           </div>
-          <button type="submit">Envoyer via mon client mail →</button>
-          <p class="hint">Le formulaire ouvre une fenêtre mail (Gmail, Outlook, Mail…) avec tous les champs pré-remplis. Tu n'as plus qu'à cliquer « Envoyer ».</p>
+          <input type="text" id="cfHp" name="company-website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;" />
+          <button type="submit" id="cfSubmit">Envoyer →</button>
+          <div id="cfStatus" class="cf-status" role="status" aria-live="polite"></div>
+          <p class="hint">Le message m'arrive directement par email. Réponse sous 24-48h ouvrées.</p>
         </form>
       </div>
     </div>

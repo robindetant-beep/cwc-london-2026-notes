@@ -427,24 +427,62 @@ function recalc() {
 [ccCalls, ccHard, ccTokens].forEach(el => el.addEventListener('input', recalc));
 recalc();
 
-/* CONTACT FORM — mailto */
+/* CONTACT FORM — POST to /api/contact (Resend backend) */
 const contactForm = document.getElementById('contactForm');
+const cfSubmit = document.getElementById('cfSubmit');
+const cfStatus = document.getElementById('cfStatus');
+function setStatus(kind, msg) {
+  if (!cfStatus) return;
+  cfStatus.className = 'cf-status cf-' + kind;
+  cfStatus.textContent = msg;
+}
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
     const name = document.getElementById('cfName').value.trim();
     const email = document.getElementById('cfEmail').value.trim();
     const topic = document.getElementById('cfTopic').value;
     const message = document.getElementById('cfMessage').value.trim();
+    const hp = (document.getElementById('cfHp')?.value || '').trim();
+
     if (!name || !email || !message) {
-      alert('Merci de remplir nom, email et message.');
+      setStatus('error', 'Merci de remplir nom, email et message.');
       return;
     }
-    const subject = encodeURIComponent('[CwC Recap] ' + topic);
-    const body = encodeURIComponent(
-      message + '\n\n— ' + name + '\n' + email + '\n\n' +
-      '(Envoyé depuis le recap CwC London — ' + window.location.href + ')'
-    );
-    window.location.href = 'mailto:robin.detant@sagora.eu?subject=' + subject + '&body=' + body;
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      setStatus('error', "L'email ne semble pas valide.");
+      return;
+    }
+    if (message.length < 10) {
+      setStatus('error', 'Message un peu court — dis-m\'en un peu plus (10 caractères minimum).');
+      return;
+    }
+
+    cfSubmit.disabled = true;
+    setStatus('loading', 'Envoi en cours…');
+
+    try {
+      const resp = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, topic, message, hp })
+      });
+      const data = await resp.json().catch(() => ({}));
+      if (resp.ok && data.ok) {
+        contactForm.reset();
+        setStatus('success', '✓ Message envoyé. Je te réponds sous 24-48h ouvrées.');
+      } else {
+        const fallback = 'mailto:robin.detant@sagora.eu?subject=' + encodeURIComponent('[CwC Recap] ' + topic) + '&body=' + encodeURIComponent(message + '\n\n— ' + name + '\n' + email);
+        setStatus('error', "L'envoi a échoué. Tu peux réessayer ou m'écrire directement : robin.detant@sagora.eu");
+        console.error('Contact error:', data);
+        // Optional: open mailto as fallback
+        setTimeout(() => { window.location.href = fallback; }, 1200);
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error', "Connexion impossible. Écris-moi directement : robin.detant@sagora.eu");
+    } finally {
+      cfSubmit.disabled = false;
+    }
   });
 }

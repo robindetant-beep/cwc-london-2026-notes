@@ -1,0 +1,10 @@
+{
+  "name": "cwc-london-2026-notes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recap interactif Code w/ Claude Extended London — 20 mai 2026.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
